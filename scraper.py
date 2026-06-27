@@ -284,10 +284,10 @@ SCRAPER_REGISTRY = {
         "func": fetch_arabnews, "name": "Arab News", "lang": "en",
         "note": "RSS 可能损坏，网页抓取备用"
     },
-    # www.txt #10: QNA → 无 RSS
-    "qna": {
-        "func": fetch_qna, "name": "Qatar News Agency (QNA)", "lang": "en",
-        "note": "从英文版首页抓取"
+    # www.txt #10: Egypt Independent → 新的埃及英文媒体
+    "egypt_independent": {
+        "func": fetch_egypt_independent, "name": "Egypt Independent", "lang": "en",
+        "note": "从首页抓取"
     },
     # www.txt #11: GCC → 无 RSS
     "gcc": {
