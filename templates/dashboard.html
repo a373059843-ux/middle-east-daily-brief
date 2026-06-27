@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中东每日简报 — {{ date_display }}</title>
+<style>
+/* ============================================================
+   中东每日简报 — 四栏日报（自包含，离线可用）
+   ============================================================ */
+
+:root {
+  --bg: #f5f4f0;                      /* 报纸暖黄底色 */
+  --paper: #fffef9;                   /* 纸张白 */
+  --text: #1a1a1a;
+  --text-muted: #5a5a5a;
+  --border: #d6d3cc;
+  --rule: #8b0000;                    /* 深红分割线 */
+  --title-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", "STSong", Georgia, "Times New Roman", serif;
+  --body-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+               "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --body-ar: "Noto Naskh Arabic", "Scheherazade New", "Arabic Typesetting", "Traditional Arabic", serif;
+
+  /* 四栏主题色 */
+  --col-political:  #4a148c;
+  --col-diplomacy:  #004d40;
+  --col-economy:    #1b5e20;
+  --col-military:   #b71c1c;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--body-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ====== 报头 ====== */
+.masthead {
+  background: var(--paper);
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 28px 32px 6px;
+  text-align: center;
+}
+.masthead .dateline {
+  font-family: var(--title-serif);
+  font-size: .9rem;
+  color: var(--text-muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-top: 3px double var(--rule);
+  border-bottom: 1px solid var(--border);
+  display: inline-block;
+  padding: 6px 24px;
+  margin-bottom: 14px;
+}
+.masthead h1 {
+  font-family: var(--title-serif);
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+  color: #111;
+  line-height: 1.15;
+}
+.masthead h1 em { font-style: normal; color: var(--rule); }
+.masthead .subhead {
+  font-family: var(--title-serif);
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  letter-spacing: .05em;
+}
+
+/* ====== 四栏主体 ====== */
+.broadsheet {
+  max-width: 1320px;
+  margin: 0 auto 60px;
+  padding: 0 24px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  border-left: 1px solid var(--border);
+}
+
+.column {
+  border-right: 1px solid var(--border);
+  background: var(--paper);
+  min-height: 300px;
+}
+
+.col-header {
+  padding: 14px 16px 10px;
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 5;
+  backdrop-filter: blur(2px);
+}
+.col-header .col-emoji { font-size: 1.6rem; display: block; line-height: 1; }
+.col-header .col-title-zh {
+  font-family: var(--title-serif);
+  font-size: 1.15rem;
+  font-weight: 900;
+  margin-top: 2px;
+  letter-spacing: .06em;
+}
+.col-header .col-title-en {
+  font-size: .7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-top: 1px;
+  font-family: var(--title-serif);
+}
+.col-header .col-count {
+  font-size: .7rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+.col-political  .col-header { border-bottom-color: var(--col-political); }
+.col-diplomacy  .col-header { border-bottom-color: var(--col-diplomacy); }
+.col-economy    .col-header { border-bottom-color: var(--col-economy); }
+.col-military   .col-header { border-bottom-color: var(--col-military); }
+.col-political  .col-title-zh { color: var(--col-political); }
+.col-diplomacy  .col-title-zh { color: var(--col-diplomacy); }
+.col-economy    .col-title-zh { color: var(--col-economy); }
+.col-military   .col-title-zh { color: var(--col-military); }
+
+/* ====== 文章条目 ====== */
+.article-list { padding: 8px 0; }
+.article-item {
+  padding: 12px 18px;
+  border-bottom: 1px dotted var(--border);
+  break-inside: avoid;
+}
+.article-item:last-child { border-bottom: none; }
+
+.article-source {
+  font-size: .65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+.article-title {
+  font-size: .92rem;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 4px;
+}
+.article-title a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color .15s;
+}
+.article-title a:hover { color: var(--rule); text-decoration: underline; }
+
+/* 阿拉伯语文章标题 */
+.article-title[lang="ar"] {
+  font-family: var(--body-ar);
+  font-size: 1rem;
+  line-height: 1.65;
+  direction: rtl;
+  text-align: right;
+}
+.article-title[lang="ar"] a:hover { color: var(--rule); }
+
+.article-summary {
+  font-size: .78rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.article-meta {
+  font-size: .68rem;
+  color: #999;
+  margin-top: 4px;
+  display: flex;
+  gap: 8px;
+}
+
+/* ====== 响应式 ====== */
+@media (max-width: 1100px) {
+  .broadsheet { grid-template-columns: 1fr 1fr; }
+  .broadsheet { border-left: none; }
+  .column:nth-child(odd) { border-left: 1px solid var(--border); }
+}
+@media (max-width: 640px) {
+  .broadsheet { grid-template-columns: 1fr; border-left: none; }
+  .column { border-left: 1px solid var(--border); border-right: 1px solid var(--border); }
+  .masthead h1 { font-size: 1.8rem; }
+  .masthead { padding: 16px 12px 4px; }
+}
+
+/* ====== 打印友好 ====== */
+@media print {
+  :root { --bg: #fff; --paper: #fff; }
+  body { font-size: 10pt; }
+  .broadsheet { max-width: 100%; grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .article-title { font-size: 8pt; }
+  .article-summary { font-size: 7pt; }
+}
+
+/* 页脚 */
+.footer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 20px 32px 40px;
+  text-align: center;
+  font-size: .75rem;
+  color: var(--text-muted);
+  font-family: var(--title-serif);
+}
+.footer a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<!-- ============ 报头 ============ -->
+<header class="masthead">
+  <div class="dateline">{{ date_display }} · MIDDLE EAST DAILY BRIEF</div>
+  <h1>中东<em>每日简报</em></h1>
+  <div class="subhead">政治 · 外交 · 经济 · 军事冲突</div>
+</header>
+
+<!-- ============ 四栏主体 ============ -->
+<div class="broadsheet">
+
+{% set columns = [
+  {"key": "political", "emoji": "🏛️",  "zh": "政治",   "en": "Politics",        "css": "col-political"},
+  {"key": "diplomacy", "emoji": "🌍",  "zh": "外交",   "en": "Diplomacy",        "css": "col-diplomacy"},
+  {"key": "economy",   "emoji": "💰",  "zh": "经济",   "en": "Economy",          "css": "col-economy"},
+  {"key": "military",  "emoji": "⚔️",  "zh": "军事冲突","en": "Military / Conflict", "css": "col-military"},
+] %}
+
+{% for col in columns %}
+  <div class="column {{ col.css }}">
+    <div class="col-header">
+      <span class="col-emoji">{{ col.emoji }}</span>
+      <div class="col-title-zh">{{ col.zh }}</div>
+      <div class="col-title-en">{{ col.en }}</div>
+      {% set col_count = article_groups.get(col.key, {"articles": []}).articles|length %}
+      <div class="col-count">{{ col_count }} 篇报道</div>
+    </div>
+    <div class="article-list">
+    {% set group = article_groups.get(col.key) %}
+    {% if group and group.articles %}
+      {% for art in group.articles %}
+      <article class="article-item">
+        <div class="article-source">{{ art.source }}</div>
+        <div class="article-title" {% if art.lang == 'ar' %}lang="ar"{% endif %}>
+          <a href="{{ art.url }}" target="_blank" rel="noopener noreferrer">{{ art.title }}</a>
+        </div>
+        {% if art.summary %}
+        <div class="article-summary">{{ art.summary }}</div>
+        {% endif %}
+        {% if art.pub_date %}
+        <div class="article-meta">
+          <span>{{ art.pub_date[:16] }}</span>
+        </div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    {% else %}
+      <!-- 无报道时也保持栏位空间 -->
+    {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+</div><!-- /.broadsheet -->
+
+<footer class="footer">
+  <p>数据由 Middle East Daily Brief 自动采集于 {{ date_display }} · 来源覆盖 13+ 家中东主流媒体</p>
+  <p>报告为自包含 HTML（无需服务器），可离线查看 · <a href="https://github.com">项目主页</a></p>
+</footer>
+
+</body>
+</html>

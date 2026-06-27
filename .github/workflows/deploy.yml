@@ -1,0 +1,45 @@
+# Middle East Daily Brief 自动化部署
+
+name: Generate & Deploy Daily Brief
+
+on:
+  schedule:
+    # 每天 UTC 14:00 运行 (北京时间 22:00)
+    - cron: '0 14 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install feedparser jinja2
+
+      - name: Fetch & Generate
+        run: |
+          # 使用历史数据生成（GitHub Actions 的网络受限，RSS 抓取可能不完整）
+          # 直接基于仓库中已有的 data/ 目录生成最新日报
+          python -c "
+          import sys; sys.path.insert(0, '.')
+          from generator import generate
+          from datetime import date
+          generate(date.today())
+          "
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          force_orphan: true
