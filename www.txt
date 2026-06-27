@@ -7,7 +7,7 @@ https://gate.ahram.org.eg/
 https://www.aa.com.tr/
 https://www.reuters.com/
 https://www.arabnews.com/
-https://www.qna.org.qa/en
-https://www.gcc-sg.org/ar/Pages/default.aspx
 https://www.spa.gov.sa/ar
 https://www.alaraby.co.uk/
+https://www.aljazeera.com/
+https://www.egyptindependent.com/
