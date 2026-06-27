@@ -235,6 +235,19 @@ def fetch_alarabiya_en() -> list[dict]:
     return []
 
 
+def fetch_egypt_independent() -> list[dict]:
+    """Egypt Independent - 英文首页"""
+    html = _fetch("https://www.egyptindependent.com/", timeout=12)
+    if not html:
+        return []
+    articles = _ld_json_articles(html)
+    if not articles:
+        articles = _link_articles(html, "https://www.egyptindependent.com", [
+            r'/\d{4}/\d{2}/[^"\'\s]+',
+        ])
+    return _dedup(articles)[:50]
+
+
 def _dedup(articles: list[dict]) -> list[dict]:
     seen = set()
     out = []
@@ -284,7 +297,7 @@ SCRAPER_REGISTRY = {
         "func": fetch_arabnews, "name": "Arab News", "lang": "en",
         "note": "RSS 可能损坏，网页抓取备用"
     },
-    # www.txt #10: Egypt Independent → 新的埃及英文媒体
+    # www.txt #10: Egypt Independent
     "egypt_independent": {
         "func": fetch_egypt_independent, "name": "Egypt Independent", "lang": "en",
         "note": "从首页抓取"

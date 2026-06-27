@@ -1,14 +1,29 @@
 {
   "date": "2026-06-27",
-  "generated_at": "2026-06-27T13:48:04.614531",
-  "total_articles": 209,
+  "generated_at": "2026-06-27T14:52:27.538736",
+  "total_articles": 158,
   "articles": [
+    {
+      "title": "The shoreline that holds: October 7 post-trauma therapists embark on a healing retreat",
+      "url": "https://www.jpost.com/health-and-wellness/mind-and-spirit/article-900493",
+      "summary": "For years, many of these therapists have sat with survivors, bereaved parents, evacuated families, children who lost their sense of safety, and communities trying to return to life.",
+      "pub_date": "2026-06-27T08:31:13+00:00",
+      "source": "The Jerusalem Post",
+      "lang": "en",
+      "category": {
+        "key": "general",
+        "emoji": "📰",
+        "label_en": "General",
+        "label_zh": "综合"
+      }
+    },
     {
       "title": "Common painkillers are safe during pregnancy, don't raise birth defect risk, Israeli study finds",
       "url": "https://www.jpost.com/health-and-wellness/pregnancy-and-birth/article-900508",
       "summary": "A large Ben-Gurion University of the Negev study challenges concerns over common painkillers in pregnancy, finding no link to birth defects.",
       "pub_date": "2026-06-27T07:43:44+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -22,11 +37,68 @@
       "summary": "Ancient dissections of Galen reveal a gap in modern medical training: tacit, hands-on skills still can’t be fully taught by digital tools.",
       "pub_date": "2026-06-27T07:39:00+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
         "label_en": "General",
         "label_zh": "综合"
+      }
+    },
+    {
+      "title": "Top Pakistani, Iranian diplomats reaffirm commitment to regional peace in wake of new strikes",
+      "url": "https://www.aa.com.tr/en/middle-east/top-pakistani-iranian-diplomats-reaffirm-commitment-to-regional-peace-in-wake-of-new-strikes/3979498",
+      "summary": "Pakistan's Ishaq Dar speaks with his Iranian counterpart Abbas Araghchi over phone after strikes",
+      "pub_date": "2026-06-27T06:44:05+00:00",
+      "source": "Anadolu Agency (TR)",
+      "lang": "en",
+      "category": {
+        "key": "military",
+        "emoji": "⚔️",
+        "label_en": "Military / Conflict",
+        "label_zh": "军事/冲突"
+      }
+    },
+    {
+      "title": "تجمع عشائر لبنان يحذر من الانقسام ويؤكد دعم مؤسسات الدولة",
+      "url": "https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D8%AA%D8%AC%D9%85%D8%B9-%D8%B9%D8%B4%D8%A7%D8%A6%D8%B1-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%8A%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%A7%D9%86%D9%82%D8%B3%D8%A7%D9%85-%D9%88%D9%8A%D8%A4%D9%83%D8%AF-%D8%AF%D8%B9%D9%85-%D9%85%D8%A4%D8%B3%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9/3979495",
+      "summary": "بيان لتجمع العشائر العربية حذر فيه من الفوضى عقب احتجاجات لمناصري \"حزب الله\" على توقيع اتفاق إطار مع إسرائيل..",
+      "pub_date": "2026-06-27T06:41:39+00:00",
+      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
+      "category": {
+        "key": "political",
+        "emoji": "🏛️",
+        "label_en": "Politics",
+        "label_zh": "政治"
+      }
+    },
+    {
+      "title": "المفكرة الثقافية في سوريا ليوم السبت الـ 27 من حزيران 2026",
+      "url": "https://sana.sy/culture-and-arts/2512224/",
+      "summary": "المفكرة الثقافية في سوريا ليوم السبت الـ 27 من حزيران 2026",
+      "pub_date": "2026-06-27T06:38:45+00:00",
+      "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
+      "category": {
+        "key": "general",
+        "emoji": "📰",
+        "label_en": "General",
+        "label_zh": "综合"
+      }
+    },
+    {
+      "title": "المنظمة البحرية الدولية تجلي 2500 بحار عالقين في ‏الخليج العربي",
+      "url": "https://sana.sy/international/2512220/",
+      "summary": "أعلنت المنظمة البحرية الدولية أنها أجلت بنجاح نحو ‌‏2500 بحار عالقين في الخليج العربي، قبل أن تعلق ‏عمليات الإجلاء إثر تعرض سفينة تجارية لهجوم أثناء ‏عبورها مضيق هرمز‎.‎",
+      "pub_date": "2026-06-27T06:36:50+00:00",
+      "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
+      "category": {
+        "key": "military",
+        "emoji": "⚔️",
+        "label_en": "Military / Conflict",
+        "label_zh": "军事/冲突"
       }
     },
     {
@@ -35,6 +107,7 @@
       "summary": "Other books on the list include \"Charlotte’s Web\" by E. B. White and “Animal Farm” by George Orwell.",
       "pub_date": "2026-06-27T06:23:35+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -43,11 +116,40 @@
       }
     },
     {
+      "title": "فانس: بإمكان إيران التواصل معنا إذا لديها خلافات بشأن تطبيق الاتفاق",
+      "url": "https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D9%81%D8%A7%D9%86%D8%B3-%D8%A8%D8%A5%D9%85%D9%83%D8%A7%D9%86-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D9%85%D8%B9%D9%86%D8%A7-%D8%A5%D8%B0%D8%A7-%D9%84%D8%AF%D9%8A%D9%87%D8%A7-%D8%AE%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82/3979484",
+      "summary": "نائب الرئيس الأمريكي فانس حذر في تدوينة من أن \"الرد على العنف سيكون بعنف\"..",
+      "pub_date": "2026-06-27T06:17:37+00:00",
+      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
+      "category": {
+        "key": "political",
+        "emoji": "🏛️",
+        "label_en": "Politics",
+        "label_zh": "政治"
+      }
+    },
+    {
+      "title": "الرأس الأخضر يرافق إسبانيا إلى الدور الثاني بعد تعادله مع السعودية وخسارة الأوروغواي",
+      "url": "https://sana.sy/sport/2512183/",
+      "summary": "رافق منتخب الرأس الأخضر نظيره الإسباني إلى الدور الثاني من مونديال 2026، في أول مشاركة له في البطولة، بعدما فرض التعادل السلبي على المنتخب السعودي في المباراة التي جمعتهما في مدينة هيوستن الأمريكية، مستفيداً من خسارة منتخب الأوروغواي أمام إسبانيا بنتيجة 1-0 ضمن الجولة الثالثة والأخيرة من منافسات المجموعة الثامنة.",
+      "pub_date": "2026-06-27T06:15:00+00:00",
+      "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
+      "category": {
+        "key": "economy",
+        "emoji": "💰",
+        "label_en": "Economy",
+        "label_zh": "经济"
+      }
+    },
+    {
       "title": "US seizes nearly 400 websites that were illegally streaming World Cup, DOJ says",
       "url": "https://www.jpost.com/international/article-900635",
       "summary": "Servers and domains linked to the unauthorized streaming of the tournament's matches were targeted in Peru and Bulgaria, with additional disruptions in Croatia, Romania, Poland, and Colombia.",
       "pub_date": "2026-06-27T06:05:10+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -56,11 +158,68 @@
       }
     },
     {
+      "title": "ارتفاع طفيف بدرجات الحرارة والطقس حار نسبياً في أغلب ‏المناطق السورية‎ ‎",
+      "url": "https://sana.sy/locals/2512216/",
+      "summary": "تميل درجات الحرارة اليوم السبت للارتفاع قليلاً لتصبح أعلى من ‏معدلاتها السنوية بحوالي 1-3 درجات مئوية في أغلب المناطق ‏السورية‎.‎",
+      "pub_date": "2026-06-27T06:04:00+00:00",
+      "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
+      "category": {
+        "key": "general",
+        "emoji": "📰",
+        "label_en": "General",
+        "label_zh": "综合"
+      }
+    },
+    {
+      "title": "نص الاتفاق الإطاري الثلاثي بين لبنان وإسرائيل والولايات المتحدة",
+      "url": "https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D9%86%D8%B5-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1%D9%8A-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A-%D8%A8%D9%8A%D9%86-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%88%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%88%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D9%88%D8%AB%D9%8A%D9%82%D8%A9/3979479",
+      "summary": "وكالة الأنباء اللبنانية الرسمية نشرت نص الوثيقة نقلا عن موقع \"أكسيوس\" الأمريكي",
+      "pub_date": "2026-06-27T05:55:33+00:00",
+      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
+      "category": {
+        "key": "diplomacy",
+        "emoji": "🌍",
+        "label_en": "Diplomacy",
+        "label_zh": "外交"
+      }
+    },
+    {
+      "title": "مصر تتعادل مع إيران في ختام دور المجموعات وترافق ‏بلجيكا إلى الدور الثاني من كأس العالم 2026‏",
+      "url": "https://sana.sy/sport/2512201/",
+      "summary": "تعادل منتخب مصر مع نظيره الإيراني بهدف لمثله ‏خلال المباراة التي جمعتهما صباح اليوم السبت، في ‏مدينة سياتل الأمريكية، ضمن منافسات الجولة الثالثة ‏والأخيرة من دور المجموعات ببطولة كأس العالم لكرة ‏القدم 2026‌‎.",
+      "pub_date": "2026-06-27T05:51:02+00:00",
+      "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
+      "category": {
+        "key": "economy",
+        "emoji": "💰",
+        "label_en": "Economy",
+        "label_zh": "经济"
+      }
+    },
+    {
       "title": "IDF kills 17 terrorists, arrests over 100 suspects in operations over past week",
       "url": "https://www.jpost.com/israel-news/defense-news/article-900633",
       "summary": "As part of the operations, the IDF uncovered seven drones, combat equipment, and incitement materials, seizing at least ten weapons, including M-16 rifles, handguns, and several improvised weapons.",
       "pub_date": "2026-06-27T05:44:19+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
+      "category": {
+        "key": "military",
+        "emoji": "⚔️",
+        "label_en": "Military / Conflict",
+        "label_zh": "军事/冲突"
+      }
+    },
+    {
+      "title": "الحرس الثوري: استهدفنا نقاط تمركز للجيش الأمريكي في المنطقة",
+      "url": "https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A7%D9%84%D8%AD%D8%B1%D8%B3-%D8%A7%D9%84%D8%AB%D9%88%D8%B1%D9%8A-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D9%81%D9%86%D8%A7-%D9%86%D9%82%D8%A7%D8%B7-%D8%AA%D9%85%D8%B1%D9%83%D8%B2-%D9%84%D9%84%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9/3979471",
+      "summary": "ردا على غارة أمريكية طالت مدينة سيريك جنوبي إيران..",
+      "pub_date": "2026-06-27T05:39:51+00:00",
+      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -74,6 +233,7 @@
       "summary": "",
       "pub_date": "2026-06-27T05:39:35+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "breaking",
         "emoji": "🔴",
@@ -82,11 +242,26 @@
       }
     },
     {
+      "title": "قدم.. مصر تبلغ الأدوار الإقصائية بكأس العالم لأول مرة في تاريخها",
+      "url": "https://www.aa.com.tr/ar/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D9%82%D8%AF%D9%85-%D9%85%D8%B5%D8%B1-%D8%AA%D8%A8%D9%84%D8%BA-%D8%A7%D9%84%D8%A3%D8%AF%D9%88%D8%A7%D8%B1-%D8%A7%D9%84%D8%A5%D9%82%D8%B5%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A8%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D9%84%D8%A3%D9%88%D9%84-%D9%85%D8%B1%D8%A9-%D9%81%D9%8A-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%87%D8%A7/3979470",
+      "summary": "بعد تعادلها مع إيران 1-1 في الجولة الثالثة لمنافسات المجموعة السابعة..",
+      "pub_date": "2026-06-27T05:36:10+00:00",
+      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
+      "category": {
+        "key": "general",
+        "emoji": "📰",
+        "label_en": "General",
+        "label_zh": "综合"
+      }
+    },
+    {
       "title": "الأجندة اليومية للنشرة العربية - السبت 27 يونيو 2026",
       "url": "https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A7%D9%84%D8%A3%D8%AC%D9%86%D8%AF%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A%D8%A9-%D9%84%D9%84%D9%86%D8%B4%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%A8%D8%AA-27-%D9%8A%D9%88%D9%86%D9%8A%D9%88-2026/3979468",
       "summary": "تجدون تاليا المتابعات الإخبارية والتقارير الخاصة بأجندة النشرة العربية ليوم السبت 27 يونيو 2026",
       "pub_date": "2026-06-27T05:21:55+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -100,6 +275,7 @@
       "summary": "هما وزير العدل الأسبق نور الدين البحيري ونائب رئيس الحركة منذر الونيسي، في قضية وفاة النائب السابق الجيلاني الدبوسي، بحسب تصريح لمصدر قضائي لوكالة الأنباء التونسية",
       "pub_date": "2026-06-27T05:21:51+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -113,6 +289,7 @@
       "summary": "وفقا لما نقلته وكالة الأنباء التونسية عن مصدر قضائي",
       "pub_date": "2026-06-27T05:21:43+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -126,6 +303,7 @@
       "summary": "في الربع الأول من عام 2026 بنسبة نمو 25.7 بالمئة مقارنة بالفترة ذاتها من عام 2025",
       "pub_date": "2026-06-27T05:21:36+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -134,11 +312,12 @@
       }
     },
     {
-      "title": "Egypt enter World Cup knockouts for first time in history after dramatic draw with Iran",
-      "url": "https://www.thenationalnews.com/sport/world-cup-2026/2026/06/27/egypt-enter-world-cup-knockouts-for-first-time-in-history-after-dramatic-draw-with-iran/",
+      "title": "غزة.. فلسطيني بترت ساقه في سجون إسرائيل يفجع بمقتل ابنه الوحيد",
+      "url": "https://www.aa.com.tr/ar/%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86/%D8%BA%D8%B2%D8%A9-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A8%D8%AA%D8%B1%D8%AA-%D8%B3%D8%A7%D9%82%D9%87-%D9%81%D9%8A-%D8%B3%D8%AC%D9%88%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%8A%D9%81%D8%AC%D8%B9-%D8%A8%D9%85%D9%82%D8%AA%D9%84-%D8%A7%D8%A8%D9%86%D9%87-%D8%A7%D9%84%D9%88%D8%AD%D9%8A%D8%AF-%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D8%A5%D8%AE%D8%A8%D8%A7%D8%B1%D9%8A/3979464",
       "summary": "",
-      "pub_date": "2026-06-27T05:21:21+00:00",
-      "source": "The National (UAE)",
+      "pub_date": "2026-06-27T05:21:27+00:00",
+      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -147,11 +326,40 @@
       }
     },
     {
+      "title": "Egypt enter World Cup knockouts for first time in history after dramatic draw with Iran",
+      "url": "https://www.thenationalnews.com/sport/world-cup-2026/2026/06/27/egypt-enter-world-cup-knockouts-for-first-time-in-history-after-dramatic-draw-with-iran/",
+      "summary": "",
+      "pub_date": "2026-06-27T05:21:21+00:00",
+      "source": "The National (UAE)",
+      "lang": "en",
+      "category": {
+        "key": "general",
+        "emoji": "📰",
+        "label_en": "General",
+        "label_zh": "综合"
+      }
+    },
+    {
+      "title": "مناصرون لحزب الله يقطعون طريقا ببيروت احتجاجا على الاتفاق مع إسرائيل",
+      "url": "https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D9%85%D9%86%D8%A7%D8%B5%D8%B1%D9%88%D9%86-%D9%84%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%84%D9%87-%D9%8A%D9%82%D8%B7%D8%B9%D9%88%D9%86-%D8%B7%D8%B1%D9%8A%D9%82%D8%A7-%D8%A8%D8%A8%D9%8A%D8%B1%D9%88%D8%AA-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%85%D8%B9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84/3979463",
+      "summary": "وفق وكالة الأنباء اللبنانية..",
+      "pub_date": "2026-06-27T05:21:20+00:00",
+      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
+      "category": {
+        "key": "political",
+        "emoji": "🏛️",
+        "label_en": "Politics",
+        "label_zh": "政治"
+      }
+    },
+    {
       "title": "مونديال 2026.. العراق يودع كأس العالم بالخسارة أمام السنغال 0-5",
       "url": "https://www.aa.com.tr/ar/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D9%85%D9%88%D9%86%D8%AF%D9%8A%D8%A7%D9%84-2026-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%88%D8%AF%D8%B9-%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A8%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%B3%D9%86%D8%BA%D8%A7%D9%84-0-5/3979462",
       "summary": "وعثمان ديمبيلي يسجل ثاني أسرع هاتريك في تاريخ البطولة ليقود فرنسا للفوز على النرويج 4-1",
       "pub_date": "2026-06-27T05:21:14+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -165,6 +373,7 @@
       "summary": "Eisenkot’s petition accused Smotrich of attempting to “spread hatred, lies, and mislead voters,” stating that “there is no place for lying, deception, and manipulation in the current election system.",
       "pub_date": "2026-06-27T05:20:33+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -178,6 +387,7 @@
       "summary": "According to the military, two suspects were reportedly seen in the area, and the dispatched soldiers are searching to locate them.",
       "pub_date": "2026-06-27T05:02:54+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -191,6 +401,7 @@
       "summary": "",
       "pub_date": "2026-06-27T05:00:01+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -204,6 +415,7 @@
       "summary": "",
       "pub_date": "2026-06-27T04:53:13+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "breaking",
         "emoji": "🔴",
@@ -217,6 +429,7 @@
       "summary": "",
       "pub_date": "2026-06-27T04:30:43+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -225,11 +438,26 @@
       }
     },
     {
+      "title": "أصالة الخيول العربية وجمهور فروسية السرعة يتصدران سباق دمشق",
+      "url": "https://sana.sy/sport/syrian-sport/2512189/",
+      "summary": "شهد مضمار سباق دمشق في منطقة الديماس بريف دمشق منافسات سباق الخيول العربية الأصيلة وسط أجواء مفعمة بالحماس والإثارة، وبمشاركة واسعة من نخبة مرابط الخيول العربية، وحضور جماهيري كبير من عشاق ومحبي فروسية السرعة.",
+      "pub_date": "2026-06-27T04:30:00+00:00",
+      "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
+      "category": {
+        "key": "military",
+        "emoji": "⚔️",
+        "label_en": "Military / Conflict",
+        "label_zh": "军事/冲突"
+      }
+    },
+    {
       "title": "UAE Property: 'Is foreign capital still flowing into Dubai's property market?'",
       "url": "https://www.thenationalnews.com/business/money/2026/06/26/uae-property-is-foreign-capital-still-flowing-into-dubais-property-market/",
       "summary": "",
       "pub_date": "2026-06-27T04:00:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -243,6 +471,7 @@
       "summary": "",
       "pub_date": "2026-06-27T03:58:08+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -256,6 +485,7 @@
       "summary": "",
       "pub_date": "2026-06-27T03:40:17+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -269,6 +499,7 @@
       "summary": "The findings suggest widespread acceptance of the view that Hezbollah poses a significant threat requiring decisive steps, even at the risk of regional escalation.",
       "pub_date": "2026-06-27T03:36:07+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -282,6 +513,7 @@
       "summary": "",
       "pub_date": "2026-06-27T03:34:24+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -295,6 +527,7 @@
       "summary": "Washington on Friday released text of a trilateral framework between Israel, Lebanon and the United States aimed at ending hostilities that have been a violent second front of the Middle East war.The following are highlights of the 14-point agreement signed in the US capital:- 'Lasting peace' -Israel and Lebanon, with US support, \"affirm their shared goal of achieving lasting peace and security,\" the agreement begins.",
       "pub_date": "2026-06-27T03:30:19+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -308,6 +541,7 @@
       "summary": "Lebanon, Israel sign deal after 4 days of US-mediated negotiations for 'lasting peace and security’",
       "pub_date": "2026-06-27T03:19:24+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -321,6 +555,7 @@
       "summary": "",
       "pub_date": "2026-06-27T02:59:31+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -334,6 +569,7 @@
       "summary": "Much of the comedy in the movie comes from Uri browbeating the two, and if you can understand the Hebrew, it’s even funnier than the subtitles.",
       "pub_date": "2026-06-27T02:36:27+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -347,6 +583,7 @@
       "summary": "TV Time: To quote Nick from an early scene, “You look at anything long enough, you see what’s wrong with it.” You will see what’s wrong with In the Hand of Dante in a very short time, sadly.",
       "pub_date": "2026-06-27T02:33:58+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -360,6 +597,7 @@
       "summary": "House Minority Leader Hakeem Jeffries has drawn the ire of progressives over the years as a moderate lawmaker with an endorsement from AIPAC.",
       "pub_date": "2026-06-27T02:23:32+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -373,6 +611,7 @@
       "summary": "",
       "pub_date": "2026-06-27T02:19:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -386,6 +625,7 @@
       "summary": "Aoun described the agreement as the beginning of a road to bring about freedom and dignity to the people of Lebanon, “who sacrificed, endured, and confronted the harshest conditions.”",
       "pub_date": "2026-06-27T01:36:24+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -399,6 +639,7 @@
       "summary": "في مدينة دوما، عروس الغوطة الشرقية، لا تزال حرفة الأغباني تقاوم الزمن بوصفها واحدة من أعرق الصناعات التراثية السورية، حاملةً في خيوطها ذاكرة اجتماعية وثقافية امتدت لقرون، وموثقةً قصة نساء صنعن الجمال بصبرٍ ودقة، وحفظن إرثاً يلامس هوية المكان.",
       "pub_date": "2026-06-27T01:00:00+00:00",
       "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -412,6 +653,7 @@
       "summary": "",
       "pub_date": "2026-06-27T00:08:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -425,6 +667,7 @@
       "summary": "Ibrahim Azizi says Washington violated principles of negotiations with attacks on Iran",
       "pub_date": "2026-06-27T00:01:29+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -438,6 +681,7 @@
       "summary": "نفذت الشركة العامة لمياه الشرب والصرف الصحي في محافظة دمشق، بالتعاون مع منظمة \"أوكسفام\" البريطانية، مشروعاً حيوياً في مدينة الكسوة بريف دمشق تمثل بتمديد خط فونت بقطر 350 مم، وذلك تمهيداً لاستثمار خزان الجبل العالي الذي تبلغ سعته 1000م3.",
       "pub_date": "2026-06-27T00:00:00+00:00",
       "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -451,6 +695,7 @@
       "summary": "The strikes follow Iran's launching of a one-way attack drone at the Singapore-flagged M/V Ever Lovely cargo ship along the Omani coast as it exited the Strait of Hormuz.",
       "pub_date": "2026-06-26T23:45:56+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -464,6 +709,7 @@
       "summary": "نظمت البعثة السورية الدائمة لدى الأمم المتحدة في نيويورك، بالتعاون مع مكتبي الأمم المتحدة لمكافحة الإرهاب والاتحاد الأوروبي، فعالية هي الأولى من نوعها تحت عنوان «من تهديد موروث إلى قيادة وطنية: نهج سوريا الجديدة في مكافحة تنظيم داعش»، وذلك في مقر الأمم المتحدة في نيويورك.",
       "pub_date": "2026-06-26T23:21:49+00:00",
       "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
       "category": {
         "key": "breaking",
         "emoji": "🔴",
@@ -477,6 +723,7 @@
       "summary": "Statement aired by state TV warns response will be broader if attacks recur",
       "pub_date": "2026-06-26T23:20:31+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -490,6 +737,7 @@
       "summary": "Explosions also heard at maritime pier in Sirik",
       "pub_date": "2026-06-26T22:30:17+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "breaking",
         "emoji": "🔴",
@@ -503,6 +751,7 @@
       "summary": "توغلت قوات الاحتلال الإسرائيلي، مساء اليوم الجمعة، في بلدة جملة بريف درعا الغربي، وقامت بمداهمة عدد من المنازل وتفتيشها.",
       "pub_date": "2026-06-26T22:20:07+00:00",
       "source": "SANA — الوكالة العربية السورية للأنباء",
+      "lang": "ar",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -516,6 +765,7 @@
       "summary": "US AFFAIRS: Florida Republican David Burck discusses Israel, Iran, campus antisemitism, and why he believes Washington must deepen its alliance with Jerusalem.",
       "pub_date": "2026-06-26T22:19:29+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -529,6 +779,7 @@
       "summary": "Washington imposes sanctions over alleged chemical weapons use, as Khartoum accuses Abu Dhabi of fueling RSF insurgency",
       "pub_date": "2026-06-26T22:15:12+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -542,6 +793,7 @@
       "summary": "Vance should understand that military assistance to Israel is not a one-sided burden on the American taxpayer. He should also examine the cost of the American military presence in the Middle East.",
       "pub_date": "2026-06-26T22:12:55+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -555,76 +807,12 @@
       "summary": "Iranian force says any ‘new folly’ will face harsh response",
       "pub_date": "2026-06-26T22:05:00+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
         "label_en": "Military / Conflict",
         "label_zh": "军事/冲突"
-      }
-    },
-    {
-      "title": "السفارة اللبنانية بواشنطن: الاتفاق الإطاري يتضمن انسحاباً إسرائيلياً من منطقتين",
-      "url": "https://sana.sy/international/2512162/",
-      "summary": "أعلنت السفارة اللبنانية في واشنطن أن اتفاق الإطار الثلاثي الذي تم التوصل إليه اليوم الجمعة بين لبنان والولايات المتحدة وإسرائيل، يتضمن انسحاباً إسرائيلياً من منطقتين تجريبيتين في لبنان، بالتزامن مع انتشار الجيش اللبناني، ونزع سلاح الجماعات المسلحة غير التابعة للدولة.",
-      "pub_date": "2026-06-26T21:57:31+00:00",
-      "source": "SANA — الوكالة العربية السورية للأنباء",
-      "category": {
-        "key": "military",
-        "emoji": "⚔️",
-        "label_en": "Military / Conflict",
-        "label_zh": "军事/冲突"
-      }
-    },
-    {
-      "title": "المتحدث باسم وزارة الداخلية: النظام البائد استخدم المخدرات كوسيلة ابتزاز لبعض الدول",
-      "url": "https://sana.sy/video/2512158/",
-      "summary": "",
-      "pub_date": "2026-06-26T21:52:09+00:00",
-      "source": "SANA — الوكالة العربية السورية للأنباء",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
-      "title": "فرنسا تحسم صدارة المجموعة التاسعة والعراق يودع المونديال",
-      "url": "https://sana.sy/sport/2512154/",
-      "summary": "حسم منتخب فرنسا صدارة المجموعة التاسعة في كأس العالم 2026، بفوزه الكبير على النرويج 4-1، في المباراة التي أقيمت بينهما اليوم الجمعة في ملعب &#8220;جيليت&#8221; في مدينة فوكسبورو الأمريكية، ضمن الجولة الثالثة والأخيرة من دور المجموعات. سجل أهداف المنتخب الفرنسي عثمان ديمبلي ثلاثية في الدقائق 7 و20 و32، وديزيري دوي في الدقيقة 90+4، فيما سجل هدف [&#8230;]",
-      "pub_date": "2026-06-26T21:42:53+00:00",
-      "source": "SANA — الوكالة العربية السورية للأنباء",
-      "category": {
-        "key": "economy",
-        "emoji": "💰",
-        "label_en": "Economy",
-        "label_zh": "经济"
-      }
-    },
-    {
-      "title": "الجيش الأمريكي يقصف مواقع إيرانية رداً على استهداف سفينة في مضيق هرمز",
-      "url": "https://sana.sy/international/2512139/",
-      "summary": "شنَّ الجيش الأمريكي اليوم الجمعة ضربات عسكرية ضد إيران طالت مستودعات للصواريخ والطائرات المسيرة ومنظومات رادار، رداً على استهداف سفينة شحن تجارية في مضيق هرمز. وقالت القيادة المركزية الأمريكية (سنتكوم) ‏في بيان: إن هذه الضربات جاءت بعد تعرض سفينة الشحن &#8220;إم/في إيفر لافلي&#8221; التي ترفع علم سنغافورة لاستهداف بطائرة مسيرة في الخامس والعشرين من الشهر الجاري، [&#8230;]",
-      "pub_date": "2026-06-26T21:37:27+00:00",
-      "source": "SANA — الوكالة العربية السورية للأنباء",
-      "category": {
-        "key": "military",
-        "emoji": "⚔️",
-        "label_en": "Military / Conflict",
-        "label_zh": "军事/冲突"
-      }
-    },
-    {
-      "title": "رابطة الناجين من سجن تدمر تنظم فعالية في حماة إحياء لذكرى شهداء مجزرة تدمر",
-      "url": "https://sana.sy/photos/2512142/",
-      "summary": "",
-      "pub_date": "2026-06-26T21:36:22+00:00",
-      "source": "SANA — الوكالة العربية السورية للأنباء",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
       }
     },
     {
@@ -633,6 +821,7 @@
       "summary": "في قرية جملة، وفق قناة \"الإخبارية السورية\"..",
       "pub_date": "2026-06-26T21:20:41+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -646,6 +835,7 @@
       "summary": "زعيم حزب \"إسرائيل بيتنا\" المعارض قال إن تعاظم قوة \"حزب الله\" يجعل المواجهة المقبلة مسألة وقت",
       "pub_date": "2026-06-26T21:20:04+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -659,6 +849,7 @@
       "summary": "بحسب التفزيون الرسمي الإيراني",
       "pub_date": "2026-06-26T21:16:27+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -672,6 +863,7 @@
       "summary": "Strikes came after Trump warned of consequences following 'foolish violations' of ceasefire",
       "pub_date": "2026-06-26T21:04:07+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -680,24 +872,12 @@
       }
     },
     {
-      "title": "اختتام المعرض الطبي الدولي بدورته الـ 19 على أرض مدينة المعارض بدمشق",
-      "url": "https://sana.sy/video/2512113/",
-      "summary": "",
-      "pub_date": "2026-06-26T21:03:29+00:00",
-      "source": "SANA — الوكالة العربية السورية للأنباء",
-      "category": {
-        "key": "economy",
-        "emoji": "💰",
-        "label_en": "Economy",
-        "label_zh": "经济"
-      }
-    },
-    {
       "title": "US military conducted strikes against Iran",
       "url": "https://www.al-monitor.com/originals/2026/06/us-military-conducted-strikes-against-iran",
       "summary": "WASHINGTON, June 26 (Reuters) - The U.S. military conducted strikes against Iran on Friday, Central Command said in a statement, adding thatU.S. aircraft struck Iranian missile and drone storage locations and coastal radar sites after Tehran's attack on a commercial ship in the Strait of Hormuz.(Reporting by Daphne Psaledakis and Ismail Shakil, editing by Michelle Nichols )",
       "pub_date": "2026-06-26T21:01:39+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -711,6 +891,7 @@
       "summary": "السفير أيدان قرمان أوغلو أكد للأناضول أن التنسيق جارٍ مع هيئة \"آفاد\" لإرسال فريق بحث وإنقاذ ومساعدات إنسانية إلى فنزويلا..",
       "pub_date": "2026-06-26T20:56:34+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -724,6 +905,7 @@
       "summary": "تعد قمة رؤساء برلمانات الناتو منصة لتعزيز التنسيق البرلماني قبل انعقاد قمم قادة الحلف",
       "pub_date": "2026-06-26T20:56:31+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -737,6 +919,7 @@
       "summary": "بحسب التلفزيون الرسمي الإيراني.. دون تقديم تفاصيل إضافية",
       "pub_date": "2026-06-26T20:47:59+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -750,6 +933,7 @@
       "summary": "رئيس الوزراء اللبناني قال في بيان إن الاتفاق \"ينص على استعادة سيادة الدولة وبسط سلطتها على كامل الأراضي اللبنانية\"",
       "pub_date": "2026-06-26T20:41:47+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -763,6 +947,7 @@
       "summary": "US forces struck Iranian coastal targets after Tehran was accused of attacking a commercial cargo ship in the Strait of Hormuz.",
       "pub_date": "2026-06-26T20:40:29+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -776,6 +961,7 @@
       "summary": "في إعلان رسمي سُلّم إلى رئيس لجنة مؤتمر المهرجان الثقافي التركي خليل دمير..",
       "pub_date": "2026-06-26T20:35:27+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -789,6 +975,7 @@
       "summary": "جاء ذلك في تصريحات للوزير التركي، الجمعة، خلال مؤتمر صحفي مشترك عقب لقائه وزيرة خارجية كندا أنيتا أناند، في العاصمة أوتاوا.",
       "pub_date": "2026-06-26T20:35:07+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -802,6 +989,7 @@
       "summary": "Measures include gradual, comprehensive Israeli withdrawal from all Lebanese territory, full respect for Lebanon’s sovereignty, says embassy in US",
       "pub_date": "2026-06-26T20:28:23+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -815,6 +1003,7 @@
       "summary": "خلال مؤتمر صحفي مشترك مع وزير الخارجية التركي هاكان فيدان في العاصمة أوتاوا..",
       "pub_date": "2026-06-26T20:23:13+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -828,6 +1017,7 @@
       "summary": "السفارة اللبنانية لدى واشنطن قالت إن الجيش سينتشر بالمنطقتين ويتولى نزع سلاح الجماعات المسلحة غير التابعة للدولة",
       "pub_date": "2026-06-26T20:16:24+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -841,6 +1031,7 @@
       "summary": "Prime Minister Nawaf Salam says framework aims for full Israeli withdrawal from Lebanese territory",
       "pub_date": "2026-06-26T20:16:00+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -854,6 +1045,7 @@
       "summary": "- محمود أبو فول خرج مبتور القدم ويطالب بالسفر للعلاج في اليوم الدولي لمساندة ضحايا التعذيب",
       "pub_date": "2026-06-26T20:06:12+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -867,6 +1059,7 @@
       "summary": "WASHINGTON, June 26 (Reuters) - U.S. Secretary of State Marco Rubio said on Friday that the framework agreement reached with Israel and Lebanon establishes a clear process to restore Lebanon's sovereignty, disarm Hezbollah and dismantle its infrastructure.The agreement enables Israel to return to its borders once the threat to its citizens is removed and creates a trilateral Military Coordination Group for Lebanon, facilitated by the United States, Rubio said in a statement. (Reporting by Christ",
       "pub_date": "2026-06-26T20:01:42+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -880,6 +1073,7 @@
       "summary": "The agreement outlines a structured process for disarming Hezbollah, dismantling terrorist infrastructure, and enabling the IDF to withdraw from Lebanon once the threat posed by Hezbollah is removed.",
       "pub_date": "2026-06-26T20:01:39+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -888,11 +1082,12 @@
       }
     },
     {
-      "title": "US and Iran trade strikes putting new strain on Mideast ceasefire",
-      "url": "https://www.al-monitor.com/originals/2026/06/us-and-iran-trade-strikes-putting-new-strain-mideast-ceasefire",
-      "summary": "The United States and Iran traded military strikes after Washington on Friday accused Tehran of attacking a cargo ship, jeopardizing a fragile ceasefire as diplomats struggle to contain the Middle East war.US Central Command said the American strikes, against Iranian missile and drone storage sites and coastal radar positions, were a response to \"unwarranted aggression against commercial shipping by Iranian forces\" that \"clearly violated the ceasefire.\"",
+      "title": "US, Iran trade strikes putting new strain on Middle East truce",
+      "url": "https://www.al-monitor.com/originals/2026/06/us-iran-trade-strikes-putting-new-strain-middle-east-truce",
+      "summary": "Iran launched attacks on US sites in the Gulf in response to American strikes on the country, state media said Saturday, after Washington accused Tehran of attacking one of its cargo ships in the Strait of Hormuz.The trading of fire raised questions about efforts to keep the crucial waterway open while Washington and Tehran negotiate a final settlement to a war that began on February 28 with US and Israeli strikes on Iran.",
       "pub_date": "2026-06-26T20:00:20+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -906,6 +1101,7 @@
       "summary": "شملت الجمارك والسياحة والعمل والصناعة الدوائية وحماية التراث والتعاون العلمي، وفق وكالة الأنباء الجزائرية",
       "pub_date": "2026-06-26T19:53:29+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -919,6 +1115,7 @@
       "summary": "",
       "pub_date": "2026-06-26T19:44:53+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -932,6 +1129,7 @@
       "summary": "تصريحات صحفية للنائب حسن فضل الله قال فيها: \"سنتمسك بسلاحنا أكثر\"..",
       "pub_date": "2026-06-26T19:44:20+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -945,6 +1143,7 @@
       "summary": "جاء ذلك في تصريحات للوزير التركي، خلال مؤتمر صحفي مشترك عقب لقائه نظيرته الكندية أنيتا أناند، في العاصمة أوتاوا.",
       "pub_date": "2026-06-26T19:41:36+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -958,6 +1157,7 @@
       "summary": "المتحدث باسم الأمين العام للأمم المتحدة ستيفان دوجاريك دعا جميع الأطراف إلى الالتزام بتعهداتهم بموجب الاتفاق",
       "pub_date": "2026-06-26T19:35:06+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -971,6 +1171,7 @@
       "summary": "قال الرئيس اللبناني: \"نقسم على مواصلة العمل حتى لا يبقى احتلال ولا أسرى ولا تبعية ولا وصاية\"",
       "pub_date": "2026-06-26T19:27:15+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -979,16 +1180,17 @@
       }
     },
     {
-      "title": "فنزويلا.. ارتفاع حصيلة الزلزال المزدوج إلى 920 قتيلا",
-      "url": "https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D9%81%D9%86%D8%B2%D9%88%D9%8A%D9%84%D8%A7-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%AD%D8%B5%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%B2%D9%84%D8%B2%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%B2%D8%AF%D9%88%D8%AC-%D8%A5%D9%84%D9%89-920-%D9%82%D8%AA%D9%8A%D9%84%D8%A7-/3979307",
-      "summary": "فيما بلغ عدد المصابين 3360 شخصا، بحسب ما أعلنه رئيس البرلمان الفنزويلي",
-      "pub_date": "2026-06-26T19:01:34+00:00",
-      "source": "Anadolu Ajansı عربي (TR)",
+      "title": "How competing visions over Hormuz strait threaten fragile Iran-US deal",
+      "url": "https://www.al-monitor.com/originals/2026/06/how-competing-visions-over-hormuz-strait-threaten-fragile-iran-us-deal",
+      "summary": "Iran's latest measures in the strategic waterway expose widening gaps with the US and Gulf states, which could complicate the durability of recent diplomatic breakthroughs.",
+      "pub_date": "2026-06-26T19:02:01+00:00",
+      "source": "Al-Monitor",
+      "lang": "en",
       "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
+        "key": "diplomacy",
+        "emoji": "🌍",
+        "label_en": "Diplomacy",
+        "label_zh": "外交"
       }
     },
     {
@@ -997,6 +1199,7 @@
       "summary": "بالتزامن مع هجمات للمستوطنين شملت إحراق أراضٍ في قرية برقا شرق رام الله، وفق مصادر محلية وشهود عيان للأناضول",
       "pub_date": "2026-06-26T18:48:41+00:00",
       "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "ar",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1010,6 +1213,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:45:13+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -1023,6 +1227,7 @@
       "summary": "Israel-Lebanon deal allows Lebanese army deployment in designated areas based on Israeli army ‘recommendation,’ Israeli prime minister says",
       "pub_date": "2026-06-26T18:38:24+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -1036,19 +1241,7 @@
       "summary": "NEW YORK, June 26 (Reuters) - A U.S. judge on Friday ordered the Justice Department to justifyits decision to drop criminal charges against Indian billionaire Gautam Adani, declining to rule immediately on Adani's lawyers' request earlier in the week to formally dismiss the case.(Reporting by Luc Cohen in New York)",
       "pub_date": "2026-06-26T18:36:39+00:00",
       "source": "Al-Monitor",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
-      "title": "نتنياهو عن اتفاق لبنان: سنبقى بالحزام الأمني حتى نزع سلاح حزب الله",
-      "url": "https://www.aa.com.tr/ar/%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84/%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D8%B9%D9%86-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%B3%D9%86%D8%A8%D9%82%D9%89-%D8%A8%D8%A7%D9%84%D8%AD%D8%B2%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A-%D8%AD%D8%AA%D9%89-%D9%86%D8%B2%D8%B9-%D8%B3%D9%84%D8%A7%D8%AD-%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%84%D9%87-/3979284",
-      "summary": "وقال نتنياهو، في كلمة مسجلة، إن إسرائيل \"لن تنسحب من الحزام الأمني ما دام حزب الله لم يُنزع سلاحه، وما دام هناك تهديد لإسرائيل\"، على حد تعبيره.",
-      "pub_date": "2026-06-26T18:36:37+00:00",
-      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -1062,24 +1255,12 @@
       "summary": "Lebanon, Israel and the United States on Friday signed a trilateral framework agreement aimed at paving the way for a peace deal between the two long-time Middle East adversaries.The agreement -- which includes a pilot effort in which Lebanese soldiers take control of two areas occupied by Israel, as well as a process aimed at disarming Hezbollah -- is the result of five rounds of talks in the US capital.",
       "pub_date": "2026-06-26T18:30:19+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
         "label_en": "Military / Conflict",
         "label_zh": "军事/冲突"
-      }
-    },
-    {
-      "title": "مستثمر تركي: تحسن الأوضاع الأمنية يعيد الاستثمارات التركية إلى السودان",
-      "url": "https://www.aa.com.tr/ar/%D8%A7%D9%84%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/%D9%85%D8%B3%D8%AA%D8%AB%D9%85%D8%B1-%D8%AA%D8%B1%D9%83%D9%8A-%D8%AA%D8%AD%D8%B3%D9%86-%D8%A7%D9%84%D8%A3%D9%88%D8%B6%D8%A7%D8%B9-%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A%D8%A9-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86/3979279",
-      "summary": "بسيم هازينة مستثمر تركي يعمل في قطاع المطاعم عاد للسودان مع تحسن الأوضاع الأمنية فيها",
-      "pub_date": "2026-06-26T18:28:06+00:00",
-      "source": "Anadolu Ajansı عربي (TR)",
-      "category": {
-        "key": "economy",
-        "emoji": "💰",
-        "label_en": "Economy",
-        "label_zh": "经济"
       }
     },
     {
@@ -1088,6 +1269,7 @@
       "summary": "Framework 'beginning of beginning' for peace, says US Secretary of State Rubio",
       "pub_date": "2026-06-26T18:16:26+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1096,50 +1278,12 @@
       }
     },
     {
-      "title": "المنظمة البحرية الدولية: إجلاء 2500 بحّار من الخليج من أصل 11 ألفا",
-      "url": "https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A7%D9%84%D9%85%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A5%D8%AC%D9%84%D8%A7%D8%A1-2500-%D8%A8%D8%AD%D9%91%D8%A7%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D9%85%D9%86-%D8%A3%D8%B5%D9%84-11-%D8%A3%D9%84%D9%81%D8%A7/3979273",
-      "summary": "الأمين العام للمنظمة البحرية الدولية أرسينيو دومينغيز قال إن إجلاء أكثر من 500 سفينة قد يستغرق عدة أسابيع",
-      "pub_date": "2026-06-26T18:15:30+00:00",
-      "source": "Anadolu Ajansı عربي (TR)",
-      "category": {
-        "key": "military",
-        "emoji": "⚔️",
-        "label_en": "Military / Conflict",
-        "label_zh": "军事/冲突"
-      }
-    },
-    {
-      "title": "البرهان: لا حلول وسط والحسم بالقضاء على \"الدعم السريع\"",
-      "url": "https://www.aa.com.tr/ar/%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86/%D8%A7%D9%84%D8%A8%D8%B1%D9%87%D8%A7%D9%86-%D9%84%D8%A7-%D8%AD%D9%84%D9%88%D9%84-%D9%88%D8%B3%D8%B7-%D9%88%D8%A7%D9%84%D8%AD%D8%B3%D9%85-%D8%A8%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%B3%D8%B1%D9%8A%D8%B9/3979267",
-      "summary": "رئيس مجلس السيادة الانتقالي عبد الفتاح البرهان قال إن أي حديث عن مفاوضات لا تفضي إلى تفكيك الدعم السريع وتسليم سلاحها \"لن يكون مقبولا\"...",
-      "pub_date": "2026-06-26T18:10:06+00:00",
-      "source": "Anadolu Ajansı عربي (TR)",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
-      "title": "واشنطن تفرض عقوبات على 5 أشخاص و3 شركات مرتبطة بحرب السودان",
-      "url": "https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D9%81%D8%B1%D8%B6-%D8%B9%D9%82%D9%88%D8%A8%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-5-%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D9%883-%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D9%85%D8%B1%D8%AA%D8%A8%D8%B7%D8%A9-%D8%A8%D8%AD%D8%B1%D8%A8-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86/3979266",
-      "summary": "العقوبات استهدفت \"شبكات للمشتريات والتجنيد أسهمت في تأجيج القتال\" بين الجيش السوداني وقوات الدعم السريع، وفق بيان لمكتب مراقبة الأصول الأجنبية (أوفاك) التابع لوزارة الخزانة الأمريكية",
-      "pub_date": "2026-06-26T18:10:01+00:00",
-      "source": "Anadolu Ajansı عربي (TR)",
-      "category": {
-        "key": "military",
-        "emoji": "⚔️",
-        "label_en": "Military / Conflict",
-        "label_zh": "军事/冲突"
-      }
-    },
-    {
       "title": "Timeframe: When the UAE hosted football's future stars at the Youth World Cup in 2003",
       "url": "https://www.thenationalnews.com/arts-culture/2026/06/26/uae-host-fifa-world-cup-2003-stars/",
       "summary": "",
       "pub_date": "2026-06-26T18:02:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1153,6 +1297,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:02:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1166,6 +1311,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:02:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1179,6 +1325,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:02:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1192,6 +1339,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:02:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1205,6 +1353,7 @@
       "summary": "June 26 (Reuters) - U.S. Secretary of State Marco Rubio announced a framework agreement on Friday between Israel and Lebanon after talks in Washington. (Reporting by Daphne Psaledakis, Writing by Christian Martinez; Editing by Doina Chiacu)",
       "pub_date": "2026-06-26T18:01:44+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1218,6 +1367,7 @@
       "summary": "By Rami Ayyub and Maya GebeilyJERUSALEM/BEIRUT, June 26 (Reuters) - Israel and Lebanon are expected to sign a framework agreement in Washington on Friday following several days of talks aimed at securing an end to fighting between Israel and Iran-backed Hezbollah militants, Israeli and Lebanese officials said. The officials did not provide details on the framework deal and did not say how its terms would be different from those included in an April 16 ceasefire deal that preceded several rounds ",
       "pub_date": "2026-06-26T18:01:44+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1231,6 +1381,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:01:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1244,6 +1395,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:01:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1257,6 +1409,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:00:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1270,6 +1423,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:00:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1283,6 +1437,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:00:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1296,19 +1451,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:00:00+00:00",
       "source": "The National (UAE)",
-      "category": {
-        "key": "military",
-        "emoji": "⚔️",
-        "label_en": "Military / Conflict",
-        "label_zh": "军事/冲突"
-      }
-    },
-    {
-      "title": "Postcard from Rome: Shrine of Flags tells Italy's history of military triumphs and tragedies",
-      "url": "https://www.thenationalnews.com/news/mena/2026/06/26/postcard-from-rome-shrine-of-flags-tells-italys-history-of-military-triumphs-and-tragedies/",
-      "summary": "",
-      "pub_date": "2026-06-26T18:00:00+00:00",
-      "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1322,6 +1465,7 @@
       "summary": "",
       "pub_date": "2026-06-26T18:00:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1330,24 +1474,12 @@
       }
     },
     {
-      "title": "Lebanon and Israel sign framework agreement in Washington",
-      "url": "https://www.thenationalnews.com/news/us/2026/06/26/lebanon-and-israel-sign-framework-agreement-in-washington/",
+      "title": "Postcard from Rome: Shrine of Flags tells Italy's history of military triumphs and tragedies",
+      "url": "https://www.thenationalnews.com/news/mena/2026/06/26/postcard-from-rome-shrine-of-flags-tells-italys-history-of-military-triumphs-and-tragedies/",
       "summary": "",
-      "pub_date": "2026-06-26T17:53:35+00:00",
+      "pub_date": "2026-06-26T18:00:00+00:00",
       "source": "The National (UAE)",
-      "category": {
-        "key": "diplomacy",
-        "emoji": "🌍",
-        "label_en": "Diplomacy",
-        "label_zh": "外交"
-      }
-    },
-    {
-      "title": "توقيع اتفاق لبناني إسرائيلي.. ومصدر للأناضول: تفاهم على انسحاب تدريجي",
-      "url": "https://www.aa.com.tr/ar/%D8%A7%D9%84%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/%D8%AA%D9%88%D9%82%D9%8A%D8%B9-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%88%D9%85%D8%B5%D8%AF%D8%B1-%D9%84%D9%84%D8%A3%D9%86%D8%A7%D8%B6%D9%88%D9%84-%D8%AA%D9%81%D8%A7%D9%87%D9%85-%D8%B9%D9%84%D9%89-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%AA%D8%AF%D8%B1%D9%8A%D8%AC%D9%8A/3979244",
-      "summary": "مصدر لبناني رسمي رفيع للأناضول: الاتفاق يتضمن انسحابا تدريجيا للقوات الإسرائيلية من جنوب لبنان",
-      "pub_date": "2026-06-26T17:52:22+00:00",
-      "source": "Anadolu Ajansı عربي (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1356,11 +1488,26 @@
       }
     },
     {
+      "title": "Lebanon and Israel sign framework agreement in Washington",
+      "url": "https://www.thenationalnews.com/news/us/2026/06/26/lebanon-and-israel-sign-framework-agreement-in-washington/",
+      "summary": "",
+      "pub_date": "2026-06-26T17:53:35+00:00",
+      "source": "The National (UAE)",
+      "lang": "en",
+      "category": {
+        "key": "diplomacy",
+        "emoji": "🌍",
+        "label_en": "Diplomacy",
+        "label_zh": "外交"
+      }
+    },
+    {
       "title": "US brokers deal for limited Israeli withdrawal in south Lebanon",
       "url": "https://www.al-monitor.com/originals/2026/06/us-brokers-deal-limited-israeli-withdrawal-south-lebanon",
       "summary": "The deal establishes a US-facilitated military coordination group to oversee the creation of two initial pilot zones in southern Lebanon.",
       "pub_date": "2026-06-26T17:42:15+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1374,6 +1521,7 @@
       "summary": "By Jihed Abidellaoui, Zohra Bensemra and Khalil AshawiNABATIEH, Lebanon, June 26 (Reuters) - Chanting rhythmically in the summer sun, the men marched through the southern Lebanese city of Nabatieh as part of their annual tradition to mark Ashura, the holiest day in the Shi'ite Muslim calendar. This year, they walked through a city in ruins.Israel's nearly four-month air and ground campaign that it says was targeting armed group Hezbollah has destroyed large swathes of Lebanon's south and left ot",
       "pub_date": "2026-06-26T17:36:43+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1387,6 +1535,7 @@
       "summary": "By Jonathan SaulLONDON, June 26 (Reuters) - The United Nations is working with countries to resume the evacuation of hundreds of ships and thousands of stranded seafarers from the Strait of Hormuz after the effort was halted earlier this week, a top U.N. agency official said on Friday.The U.N.'s International Maritime Organization said on Thursday it had \"temporarily paused\" its evacuation initiative after a container ship operated by Taiwan's Evergreen was attacked.",
       "pub_date": "2026-06-26T17:36:43+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1400,6 +1549,7 @@
       "summary": "",
       "pub_date": "2026-06-26T17:32:53+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1413,6 +1563,7 @@
       "summary": "Following an outstanding career at the University of Houston, Emanuel joins a growing list of Israeli basketball talent to reach the NBA.",
       "pub_date": "2026-06-26T17:29:12+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1426,6 +1577,7 @@
       "summary": "Abductees include 3 Lebanese residents of Ain Arab in Marjayoun district, 3 Syrian workers, says Anadolu correspondent",
       "pub_date": "2026-06-26T17:23:36+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1439,6 +1591,7 @@
       "summary": "",
       "pub_date": "2026-06-26T17:18:23+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1452,6 +1605,7 @@
       "summary": "",
       "pub_date": "2026-06-26T16:30:32+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1465,6 +1619,7 @@
       "summary": "Traffic levels in the Strait of Hormuz fell back from Wednesday's high, but vessels continued to use a non-Iranian-approved passage despite a ship being struck by a projectile, tracking platforms showed Friday.At least 42 commodity vessels -- including tankers carrying oil, gas, and dry bulk such as fertilisers -- crossed on Thursday, Kpler's tracking platform showed, down from a high of 57 on Wednesday.Ten of those vessels entered the Gulf, while 32 exited. Half of the 42 vessels used a souther",
       "pub_date": "2026-06-26T16:30:18+00:00",
       "source": "Al-Monitor",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1478,6 +1633,7 @@
       "summary": "International Maritime Organization says efforts ongoing to restart evacuation of stranded seafarers",
       "pub_date": "2026-06-26T16:29:44+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1486,24 +1642,12 @@
       }
     },
     {
-      "title": "Trump calls Iran’s drone attack on cargo ship 'foolish violation' of ceasefire",
-      "url": "https://www.al-monitor.com/originals/2026/06/trump-calls-irans-drone-attack-cargo-ship-foolish-violation-ceasefire",
-      "summary": "The US president stopped short of issuing new threats, but called Thursday's drone attack \"foolish.\"",
-      "pub_date": "2026-06-26T16:12:15+00:00",
-      "source": "Al-Monitor",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
       "title": "Abu Dhabi to trial new cancer treatment in drive to 'revolutionise' chemotherapy",
       "url": "https://www.thenationalnews.com/news/uae/2026/06/26/abu-dhabi-to-trial-new-cancer-treatment-in-drive-to-revolutionise-chemotherapy/",
       "summary": "",
       "pub_date": "2026-06-26T16:04:03+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1512,24 +1656,12 @@
       }
     },
     {
-      "title": "UAE stresses Hormuz security in rare call with Iran after war tensions",
-      "url": "https://www.al-monitor.com/originals/2026/06/uae-stresses-hormuz-security-rare-call-iran-after-war-tensions",
-      "summary": "June 26 (Reuters) - UAE Foreign Minister Sheikh Abdullah bin Zayed on Friday stressed the need to protect maritime corridors and ensure freedom of navigation through the Strait of Hormuz in a call with his Iranian counterpart Abbas Araqchi.The exchange, reported by state news agency WAM, marks a rare public contact between Abu Dhabi and Tehran following tensions linked to the U.S.-Israeli war on Iran.",
-      "pub_date": "2026-06-26T16:01:46+00:00",
-      "source": "Al-Monitor",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
       "title": "We don't know anything about $300bn Iran reconstruction fund, says GCC Secretary General",
       "url": "https://www.thenationalnews.com/news/gulf/2026/06/26/we-dont-know-anything-about-300bn-iran-reconstruction-fund-says-gcc-secretary-general/",
       "summary": "",
       "pub_date": "2026-06-26T16:00:49+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1543,6 +1675,7 @@
       "summary": "Bin Zayed stresses full compliance with US-Iran memorandum of understanding, says diplomacy remains preferred means of resolving crises",
       "pub_date": "2026-06-26T15:48:19+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -1551,24 +1684,12 @@
       }
     },
     {
-      "title": "Gulf states push incentives for investors, expats after war dents image",
-      "url": "https://www.al-monitor.com/originals/2026/06/gulf-states-push-incentives-investors-expats-after-war-dents-image",
-      "summary": "Several Gulf states are working to recover their images as global havens of stability in the wake of the Iran war.",
-      "pub_date": "2026-06-26T15:44:14+00:00",
-      "source": "Al-Monitor",
-      "category": {
-        "key": "military",
-        "emoji": "⚔️",
-        "label_en": "Military / Conflict",
-        "label_zh": "军事/冲突"
-      }
-    },
-    {
       "title": "4th day of US-mediated Israel-Lebanon talks kicks off in Washington",
       "url": "https://www.aa.com.tr/en/us-israel-iran-war/4th-day-of-us-mediated-israel-lebanon-talks-kicks-off-in-washington/3979110",
       "summary": "Sides 'have reconvened today to continue their work toward an agreement for 'lasting peace and security,' says State Department official",
       "pub_date": "2026-06-26T15:23:33+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1582,6 +1703,7 @@
       "summary": "",
       "pub_date": "2026-06-26T15:17:50+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -1595,6 +1717,7 @@
       "summary": "Israeli violations of Gaza ceasefire agreement killed 1,031, injured 3,309 others since Oct. 2025",
       "pub_date": "2026-06-26T14:43:53+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1608,6 +1731,7 @@
       "summary": "",
       "pub_date": "2026-06-26T14:31:58+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1621,6 +1745,7 @@
       "summary": "Hamas accuses Israel of major ceasefire violations as envoy Mladenov presents new approaches; delegation to carry faction response to Cairo in coming days, spokesman tells Anadolu",
       "pub_date": "2026-06-26T14:29:06+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1634,6 +1759,7 @@
       "summary": "Local official says attack on Burqa village, east of Ramallah, carried out under Israeli army protection",
       "pub_date": "2026-06-26T14:19:52+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1647,6 +1773,7 @@
       "summary": "",
       "pub_date": "2026-06-26T14:19:42+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1660,6 +1787,7 @@
       "summary": "Warning comes as displaced residents continue returning to southern Lebanon and US-mediated talks between Israel, Lebanon in Washington enter additional day",
       "pub_date": "2026-06-26T14:17:57+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1673,6 +1801,7 @@
       "summary": "The deletion took place sometime during January 2024, and it is unknown who removed the files and whether copies of them still exist.",
       "pub_date": "2026-06-26T13:41:47+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1686,6 +1815,7 @@
       "summary": "",
       "pub_date": "2026-06-26T13:41:17+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "breaking",
         "emoji": "🔴",
@@ -1699,6 +1829,7 @@
       "summary": "",
       "pub_date": "2026-06-26T13:11:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1712,6 +1843,7 @@
       "summary": "",
       "pub_date": "2026-06-26T12:45:29+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1725,6 +1857,7 @@
       "summary": "Israeli ministers criticize restrictions on military offensives as Washington presses for de-escalation during Lebanon-Israel talks",
       "pub_date": "2026-06-26T12:45:18+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -1738,6 +1871,7 @@
       "summary": "MILITARY AFFAIRS: Brig.-Gen. Yael Grosman tells The Post why the IDF sees space as the next battlefield, while other IDF sources detail advances in AI, cyber, electronic warfare, and more.",
       "pub_date": "2026-06-26T12:34:03+00:00",
       "source": "The Jerusalem Post",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1746,24 +1880,12 @@
       }
     },
     {
-      "title": "Cabinet clashes over claims IDF operations restricted in southern Lebanon",
-      "url": "https://www.jpost.com/israel-news/defense-news/article-900606",
-      "summary": "A cabinet exchange erupted after ministers said soldiers in southern Lebanon reported restrictions. Netanyahu and Katz denied claims, saying troops face no limits",
-      "pub_date": "2026-06-26T12:20:08+00:00",
-      "source": "The Jerusalem Post",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
       "title": "Iran turns back 3 foreign tankers attempting 'unauthorized' Hormuz transit: Reports",
       "url": "https://www.aa.com.tr/en/middle-east/iran-turns-back-3-foreign-tankers-attempting-unauthorized-hormuz-transit-reports/3978831",
       "summary": "Iran's state media says vessels attempted to use southern corridor of the Strait of Hormuz without Tehran’s coordination",
       "pub_date": "2026-06-26T11:58:58+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1777,6 +1899,7 @@
       "summary": "",
       "pub_date": "2026-06-26T11:45:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1790,6 +1913,7 @@
       "summary": "",
       "pub_date": "2026-06-26T11:44:11+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1803,6 +1927,7 @@
       "summary": "UN nuclear watchdog has begun technical talks with Iran to prepare inspections under US-Iran agreement, Rafael Grossi says",
       "pub_date": "2026-06-26T11:02:31+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1816,6 +1941,7 @@
       "summary": "",
       "pub_date": "2026-06-26T10:45:14+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1829,6 +1955,7 @@
       "summary": "",
       "pub_date": "2026-06-26T10:44:02+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1842,6 +1969,7 @@
       "summary": "",
       "pub_date": "2026-06-26T10:39:02+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1855,6 +1983,7 @@
       "summary": "",
       "pub_date": "2026-06-26T10:26:16+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -1868,6 +1997,7 @@
       "summary": "Talks stall as Israel refuses full withdrawal from south, Lebanon demands complete pullout",
       "pub_date": "2026-06-26T10:26:03+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1881,6 +2011,7 @@
       "summary": "Tehran pushes back against US-GCC call for 'free, unconditional' Hormuz navigation",
       "pub_date": "2026-06-26T10:23:13+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1894,6 +2025,7 @@
       "summary": "Leader of Lebanese group says no one has the right to make commitments affecting Lebanon's sovereignty",
       "pub_date": "2026-06-26T10:16:02+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1907,6 +2039,7 @@
       "summary": "",
       "pub_date": "2026-06-26T09:57:25+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1920,6 +2053,7 @@
       "summary": "",
       "pub_date": "2026-06-26T09:51:02+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1933,6 +2067,7 @@
       "summary": "",
       "pub_date": "2026-06-26T09:50:42+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1946,6 +2081,7 @@
       "summary": "Empty LNG carriers gather off Qatar’s Ras Laffan facility as Doha prepares to increase exports",
       "pub_date": "2026-06-26T09:43:26+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1959,6 +2095,7 @@
       "summary": "Senior Lebanese source tells Anadolu that demand for complete pullout under timeline led to extension of 5th round of Washington talks",
       "pub_date": "2026-06-26T09:33:34+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
@@ -1972,6 +2109,7 @@
       "summary": "",
       "pub_date": "2026-06-26T09:09:33+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -1985,6 +2123,7 @@
       "summary": "Military headquarters says Tehran reserves right to respond to threats, does not name specific countries",
       "pub_date": "2026-06-26T08:57:09+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "military",
         "emoji": "⚔️",
@@ -1998,6 +2137,7 @@
       "summary": "Joseph Aoun says proposal reflects international commitment to Lebanon's sovereignty and backs Lebanese Army's role in securing south",
       "pub_date": "2026-06-26T08:37:05+00:00",
       "source": "Anadolu Agency (TR)",
+      "lang": "en",
       "category": {
         "key": "political",
         "emoji": "🏛️",
@@ -2011,6 +2151,7 @@
       "summary": "",
       "pub_date": "2026-06-26T08:27:48+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -2019,24 +2160,12 @@
       }
     },
     {
-      "title": "Iran slams US-GCC statement as ‘provocative,’ urges regional policy rethink",
-      "url": "https://www.aa.com.tr/en/middle-east/iran-slams-us-gcc-statement-as-provocative-urges-regional-policy-rethink/3978577",
-      "summary": "Tehran accuses Gulf states of aligning with Washington and Israel against regional security interests",
-      "pub_date": "2026-06-26T08:17:22+00:00",
-      "source": "Anadolu Agency (TR)",
-      "category": {
-        "key": "diplomacy",
-        "emoji": "🌍",
-        "label_en": "Diplomacy",
-        "label_zh": "外交"
-      }
-    },
-    {
       "title": "UAE medics on floating hospital perform complex surgeries on four more Gazan patients",
       "url": "https://www.thenationalnews.com/news/uae/2026/06/26/uae-medics-on-floating-hospital-perform-complex-surgeries-on-four-more-gazan-patients/",
       "summary": "",
       "pub_date": "2026-06-26T07:43:57+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -2050,6 +2179,7 @@
       "summary": "",
       "pub_date": "2026-06-26T07:37:10+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "economy",
         "emoji": "💰",
@@ -2063,6 +2193,7 @@
       "summary": "",
       "pub_date": "2026-06-26T07:14:16+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "general",
         "emoji": "📰",
@@ -2076,648 +2207,12 @@
       "summary": "",
       "pub_date": "2026-06-26T07:00:00+00:00",
       "source": "The National (UAE)",
+      "lang": "en",
       "category": {
         "key": "diplomacy",
         "emoji": "🌍",
         "label_en": "Diplomacy",
         "label_zh": "外交"
-      }
-    },
-    {
-      "title": "Strait of Hormuz evacuations halted, Gulf states cautious on Iran and Abu Dhabi unveils performing arts centre",
-      "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/06/26/strait-of-hormuz-evacuations-halted-gulf-states-cautious-on-iran-and-abu-dhabi-unveils-performing-arts-centre/",
-      "summary": "",
-      "pub_date": "2026-06-26T06:28:00+00:00",
-      "source": "The National (UAE)",
-      "category": {
-        "key": "breaking",
-        "emoji": "🔴",
-        "label_en": "Breaking / Crisis",
-        "label_zh": "突发事件"
-      }
-    },
-    {
-      "title": "World Cup round-up: Ecuador stun Germany, Morocco set to face Dutch and Saudi Arabia and Egypt in action",
-      "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/06/26/world-cup-round-up-ecuador-stun-germany-morocco-set-to-face-dutch-and-saudi-arabia-and-egypt-in-action/",
-      "summary": "",
-      "pub_date": "2026-06-26T05:52:56+00:00",
-      "source": "The National (UAE)",
-      "category": {
-        "key": "diplomacy",
-        "emoji": "🌍",
-        "label_en": "Diplomacy",
-        "label_zh": "外交"
-      }
-    },
-    {
-      "title": "11 مليون دولار مكافأة منتخب مصر بعد التأهل لدور الـ 32 بكأس العالم 2026",
-      "url": "https://www.youm7.com/story/2026/6/27/11-مليون-دولار-مكافأة-منتخب-مصر-بعد-التأهل-لدور-الـ/7462455",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "economy",
-        "emoji": "💰",
-        "label_en": "Economy",
-        "label_zh": "经济"
-      }
-    },
-    {
-      "title": "حسام حسن عن تغيير محمد صلاح: هو اللي طلب الخروج وننتظر تشخيص إصابته",
-      "url": "https://www.youm7.com/story/2026/6/27/حسام-حسن-عن-تغيير-محمد-صلاح-هو-اللي-طلب-الخروج/7462468",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "فرحة مصرية تاريخية.. الفراعنة يتأهلون لأول مرة إلدور المجموعات في كأس العالم",
-      "url": "https://www.youm7.com/story/2026/6/27/فرحة-مصرية-تاريخية-الفراعنة-يتأهلون-لأول-مرة-إلدور-المجموعات-في/7462464",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "مصطفى شوبير: أخر 5 دقائق أمام إيران كانت الأصعب وأستراليا مش سهلة",
-      "url": "https://www.youm7.com/story/2026/6/27/مصطفى-شوبير-أخر-5-دقائق-أمام-إيران-كانت-الأصعب-وأستراليا/7462459",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "كأس العالم 2026.. منتخب مصر يتأهل لكن يخسر 5 لاعبين أمام إيران",
-      "url": "https://www.youm7.com/story/2026/6/27/كأس-العالم-2026-منتخب-مصر-يتأهل-لكن-يخسر-5-لاعبين/7462462",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "فى طريق الأرجنتين المحتمل.. مصر تعبر إلى دور الـ32 وتضرب موعدا مع أستراليا",
-      "url": "https://www.youm7.com/story/2026/6/27/فى-طريق-الأرجنتين-المحتمل-مصر-تعبر-إلى-دور-الـ32-وتضرب/7462389",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "breaking",
-        "emoji": "🔴",
-        "label_en": "Breaking / Crisis",
-        "label_zh": "突发事件"
-      }
-    },
-    {
-      "title": "منتخب مصر يفتقد مهند لاشين أمام أستراليا في دور الـ32 بكأس العالم 2026",
-      "url": "https://www.youm7.com/story/2026/6/27/منتخب-مصر-يفتقد-مهند-لاشين-أمام-أستراليا-في-دور-الـ32/7462388",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "بعد استبداله أمام إيران.. ماذا قدم محمد صلاح مع منتخب مصر في 57 دقيقة؟",
-      "url": "https://www.youm7.com/story/2026/6/27/بعد-استبداله-أمام-إيران-ماذا-قدم-محمد-صلاح-مع-منتخب/7462390",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "الجمعة 9 مساءا.. موعد مباراة مصر وأستراليا في كأس العالم 2026",
-      "url": "https://www.youm7.com/story/2026/6/27/الجمعة-9-مساءا-موعد-مباراة-مصر-وأستراليا-في-كأس-العالم/7462387",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "منتخب مصر يواجه إستراليا بدور الـ32 فى كأس العالم 2026",
-      "url": "https://www.youm7.com/story/2026/6/27/منتخب-مصر-يواجه-إستراليا-بدور-الـ32-فى-كأس-العالم-2026/7462429",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "7462464",
-      "url": "https://www.youm7.com/story/2026/6/27/فرحة-مصرية-تاريخية-الفراعنة-يتأهلون-لأول-مرة-من-دور-المجموعات/7462464",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "مضطفى شوبير",
-      "url": "https://www.youm7.com/story/2026/6/27/مصطفى-شوبير-آخر-5-دقائق-أمام-إيران-كانت-الأصعب-وأستراليا/7462459",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "نجوم الفن يهنئون المنتخب الوطني بعد التأهل إلى دور الـ32",
-      "url": "https://www.youm7.com/story/2026/6/27/نجوم-الفن-يهنئون-المنتخب-الوطني-بعد-التأهل-إلى-دور-الـ32/7462469",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "البنهاوية بيحتفلوا في الشارع بتأهل المنتخب المصري بكأس العالم.. فيديو",
-      "url": "https://www.youm7.com/story/2026/6/27/البنهاوية-بيحتفلوا-في-الشارع-بتأهل-المنتخب-المصري-بكأس-العالم-فيديو/7462460",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "بلجيكا تخطف صدارة المجموعة من مصر بعد خماسية نيوزيلندا.. صور",
-      "url": "https://www.youm7.com/story/2026/6/27/بلجيكا-تخطف-صدارة-المجموعة-من-مصر-بعد-خماسية-نيوزيلندا-صور/7462436",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "منتخب مصر يتعادل مع إيران 1-1 ويؤكد تأهله لدور الـ32 فى كأس العالم.. صور",
-      "url": "https://www.youm7.com/story/2026/6/27/منتخب-مصر-يتعادل-مع-إيران-1-1-ويؤكد-تأهله-لدور/7462416",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "الطقس اليوم.. أجواء شديدة الحرارة وارتفاع الرطوبة والعظمى بالقاهرة 35 درجة",
-      "url": "https://www.youm7.com/story/2026/6/27/الطقس-اليوم-أجواء-شديدة-الحرارة-وارتفاع-الرطوبة-والعظمى-بالقاهرة-35/7461984",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "صراع التأهل يشعل مواجهة كرواتيا وغانا فى كأس العالم 2026",
-      "url": "https://www.youm7.com/story/2026/6/27/صراع-التأهل-يشعل-مواجهة-كرواتيا-وغانا-فى-كأس-العالم-2026/7461904",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "الإخوان وثورة 30 يونيو",
-      "url": "https://www.youm7.com/story/2026/6/27/من-وعود-ما-بعد-الثورة-إلى-اتساع-الغضب-الشعبي-كيف/7461239",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "صورة تعبيرية لعمال مصر وقت ثورة 30 يونيو 2013",
-      "url": "https://www.youm7.com/story/2026/6/27/كواليس-سقوط-جمهورية-المرشد-فى-قلاع-المهنيين-سنوات-من-الاختطاف/7460836",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "تحميل الجمال",
-      "url": "https://www.youm7.com/story/2026/6/27/مهنة-الكَلة-حكاية-عمل-توارثها-الأجيال-بحلايب-وشلاتين-تنظم-تحميل/7450431",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "مجلس النواب",
-      "url": "https://www.youm7.com/story/2026/6/27/المواطن-أولًا-إشادات-برلمانية-بقرار-الرئيس-السيسى-بزيادة-المعاشات-15/7461015",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
-      "title": "فاجعة فنزويلا",
-      "url": "https://www.youm7.com/story/2026/6/27/من-فيضانات-الصين-إلى-زلزال-فنزويلا-كوارث-طبيعية-هزت-العالم/7462085",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "اول ميناء متكامل للصيد برشيد",
-      "url": "https://www.youm7.com/story/2026/6/27/بعد-زيارة-رئيس-الوزراء-تفاصيل-مشروع-ميناء-رشيد-الجديد-بتكلفة/7458326",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "طلاب يحتفلون فى ساحات لبنان بقرار إلغاء الامتحانات",
-      "url": "https://www.youm7.com/story/2026/6/27/عام-دراسى-استثنائى-فى-لبنان-عدوان-إسرائيل-يلقى-بظلاله-على/7462048",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "diplomacy",
-        "emoji": "🌍",
-        "label_en": "Diplomacy",
-        "label_zh": "外交"
-      }
-    },
-    {
-      "title": "انقطاع المياه",
-      "url": "https://www.youm7.com/story/2026/6/27/لحل-أزمة-الطفوحات-قطع-المياه-6-ساعات-عن-بشتيل-البلد/7461948",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "قطار تالجو",
-      "url": "https://www.youm7.com/story/2026/6/27/قطار-تالجو-مواعيد-الرحلات-على-خطوط-السكة-الحديد/7461614",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "المونوريل",
-      "url": "https://www.youm7.com/story/2026/6/27/​اليوم-وزارة-النقل-تبدأ-تعديل-مواعيد-المونوريل-اعرف-التفاصيل/7461624",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "7461608",
-      "url": "https://www.youm7.com/story/2026/6/27/مواعيد-قطارات-الصعيد-2026-خريطة-الرحلات-من-القاهرة-وأسوان-والعكس/7461608",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "نتيجة الاستطلاع",
-      "url": "https://www.youm7.com/story/2026/6/27/97-من-القراء-يؤيدون-تكثيف-الحملات-الرقابية-على-الأسواق-لمواجهة/7462378",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "لجنة القوى العاملة بمجلس النواب",
-      "url": "https://www.youm7.com/story/2026/6/27/من-الأسمدة-إلى-البلاستيك-قطاع-الكيماويات-يقود-مسيرة-التحول-الصناعى/7459709",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
-      "title": "الأشخاص ذوى الإعاقة",
-      "url": "https://www.youm7.com/story/2026/6/27/تفاصيل-الاشتراطات-المنصوصة-لتأهيل-المبانى-وأماكن-انتظار-السيارات-لذو-الإعاقة/7459772",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "البنك المركزي",
-      "url": "https://www.youm7.com/story/2026/6/27/مستندات-الترخيص-لمزاولة-نشاط-التمويل-الاستهلاكى-تعرف-عليها/7459774",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "قانون العقوبات رقم 58 لسنة 1937",
-      "url": "https://www.youm7.com/story/2026/6/27/السجن-7-سنوات-عقوبة-استغلال-أموال-القصّر-والخاضعين-للوصاية/7459781",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "political",
-        "emoji": "🏛️",
-        "label_en": "Politics",
-        "label_zh": "政治"
-      }
-    },
-    {
-      "title": "حبس - أرشيفية",
-      "url": "https://www.youm7.com/story/2026/6/27/ضبط-4-متهمين-في-مقتل-بائع-أقمشة-متجول-بطما-والتحريات/7462466",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "أكثر من 100 ألف سيارة عادت لأصحابها.. كيف تسترد مركبتك إذا كانت متحفظًا عليها؟",
-      "url": "https://www.youm7.com/story/2026/6/27/أكثر-من-100-ألف-سيارة-عادت-لأصحابها-كيف-تسترد-مركبتك/7455727",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "جريمة النصب الإلكتروني",
-      "url": "https://www.youm7.com/story/2026/6/27/النصب-الإلكتروني-كيف-تحمي-نفسك-من-إعلانات-الوظائف-الوهمية/7455720",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "متى ينهي الأمر الجنائي الدعوى قبل وصولها للمحكمة؟",
-      "url": "https://www.youm7.com/story/2026/6/27/بدون-مرافعات-أو-شهود-متى-ينهي-الأمر-الجنائي-الدعوى-قبل/7452714",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "كيف غيرت الهواتف المحمولة خريطة الحوادث في مصر؟",
-      "url": "https://www.youm7.com/story/2026/6/27/الجريمة-تبدأ-برسالة-كيف-غيرت-الهواتف-المحمولة-خريطة-الحوادث-في/7456461",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "طلاب الثانوية العامة",
-      "url": "https://www.youm7.com/story/2026/6/27/قبل-امتحان-الأحد-أقوى-أسئلة-وتدريبات-اللغة-العربية-للثانوية-العامة/7461668",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "صادرات مصر الزراعية",
-      "url": "https://www.youm7.com/story/2026/6/27/كيف-نجحت-الأقمار-الصناعية-في-حماية-الصادرات-الزراعية-المصرية/7460760",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "الأكاديمية المهنية للمعلمين",
-      "url": "https://www.youm7.com/story/2026/6/27/الأكاديمية-المهنية-للمعلمين-مد-فترة-التقدم-على-شهادة-الصلاحية-لـ22/7460745",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "جامعة عين شمس",
-      "url": "https://www.youm7.com/story/2026/6/27/إطلاق-برنامج-التدريب-الصيفي-لعام-2026-بكلية-التجارة-جامعة-عين/7459470",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "وزارة الأوقاف",
-      "url": "https://www.youm7.com/story/2026/6/27/اليوم-وزارة-الأوقاف-تعقد-628-مجلس-فقه-بالمديريات-الحدودية/7460566",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "جماهير دمياط تستعد للاحتفال بصعود منتخب مصر لدور ال 32",
-      "url": "https://www.youm7.com/story/2026/6/27/بأعلام-مصر-جماهير-دمياط-تحتفل-بصعود-منتخب-مصر-لدور-الـ/7462454",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "تطوير المنطقة المحيطة بمسجد بدر بالطابية بأسوان",
-      "url": "https://www.youm7.com/story/2026/6/27/10-معلومات-عن-مشروع-تطوير-المنطقة-المحيطة-بمسجد-بدر-بالطابية/7458689",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
-      }
-    },
-    {
-      "title": "احتشاد جماهير البحيرة لمشاهدة مباراة مصر و إيران فى كأس العالم",
-      "url": "https://www.youm7.com/story/2026/6/27/احتشاد-جماهير-البحيرة-لمشاهدة-مباراة-مصر-وإيران-فى-كأس-العالم/7462443",
-      "summary": "",
-      "pub_date": "",
-      "source": "اليوم السابع (Youm7)",
-      "category": {
-        "key": "general",
-        "emoji": "📰",
-        "label_en": "General",
-        "label_zh": "综合"
       }
     }
   ]
