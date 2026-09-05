@@ -1,0 +1,2968 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中东每日简报 — 2026-06-27</title>
+<style>
+/* ============================================================
+   中东每日简报 — 四栏日报（自包含，离线可用）
+   ============================================================ */
+
+:root {
+  --bg: #f5f4f0;                      /* 报纸暖黄底色 */
+  --paper: #fffef9;                   /* 纸张白 */
+  --text: #1a1a1a;
+  --text-muted: #5a5a5a;
+  --border: #d6d3cc;
+  --rule: #8b0000;                    /* 深红分割线 */
+  --title-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", "STSong", Georgia, "Times New Roman", serif;
+  --body-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+               "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --body-ar: "Noto Naskh Arabic", "Scheherazade New", "Arabic Typesetting", "Traditional Arabic", serif;
+
+  /* 四栏主题色 */
+  --col-political:  #4a148c;
+  --col-diplomacy:  #004d40;
+  --col-economy:    #1b5e20;
+  --col-military:   #b71c1c;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--body-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ====== 报头 ====== */
+.masthead {
+  background: var(--paper);
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 28px 32px 6px;
+  text-align: center;
+}
+.masthead .dateline {
+  font-family: var(--title-serif);
+  font-size: .9rem;
+  color: var(--text-muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-top: 3px double var(--rule);
+  border-bottom: 1px solid var(--border);
+  display: inline-block;
+  padding: 6px 24px;
+  margin-bottom: 14px;
+}
+.masthead h1 {
+  font-family: var(--title-serif);
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+  color: #111;
+  line-height: 1.15;
+}
+.masthead h1 em { font-style: normal; color: var(--rule); }
+.masthead .subhead {
+  font-family: var(--title-serif);
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  letter-spacing: .05em;
+}
+
+/* ====== 四栏主体 ====== */
+.broadsheet {
+  max-width: 1320px;
+  margin: 0 auto 60px;
+  padding: 0 24px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  border-left: 1px solid var(--border);
+}
+
+.column {
+  border-right: 1px solid var(--border);
+  background: var(--paper);
+  min-height: 300px;
+}
+
+.col-header {
+  padding: 14px 16px 10px;
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 5;
+  backdrop-filter: blur(2px);
+}
+.col-header .col-emoji { font-size: 1.6rem; display: block; line-height: 1; }
+.col-header .col-title-zh {
+  font-family: var(--title-serif);
+  font-size: 1.15rem;
+  font-weight: 900;
+  margin-top: 2px;
+  letter-spacing: .06em;
+}
+.col-header .col-title-en {
+  font-size: .7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-top: 1px;
+  font-family: var(--title-serif);
+}
+.col-header .col-count {
+  font-size: .7rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+.col-political  .col-header { border-bottom-color: var(--col-political); }
+.col-diplomacy  .col-header { border-bottom-color: var(--col-diplomacy); }
+.col-economy    .col-header { border-bottom-color: var(--col-economy); }
+.col-military   .col-header { border-bottom-color: var(--col-military); }
+.col-political  .col-title-zh { color: var(--col-political); }
+.col-diplomacy  .col-title-zh { color: var(--col-diplomacy); }
+.col-economy    .col-title-zh { color: var(--col-economy); }
+.col-military   .col-title-zh { color: var(--col-military); }
+
+/* ====== 文章条目 ====== */
+.article-list { padding: 8px 0; }
+.article-item {
+  padding: 12px 18px;
+  border-bottom: 1px dotted var(--border);
+  break-inside: avoid;
+}
+.article-item:last-child { border-bottom: none; }
+
+.article-source {
+  font-size: .65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+.article-title {
+  font-size: .92rem;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 4px;
+}
+.article-title a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color .15s;
+}
+.article-title a:hover { color: var(--rule); text-decoration: underline; }
+
+/* 阿拉伯语文章标题 */
+.article-title[lang="ar"] {
+  font-family: var(--body-ar);
+  font-size: 1rem;
+  line-height: 1.65;
+  direction: rtl;
+  text-align: right;
+}
+.article-title[lang="ar"] a:hover { color: var(--rule); }
+
+.article-summary {
+  font-size: .78rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.article-meta {
+  font-size: .68rem;
+  color: #999;
+  margin-top: 4px;
+  display: flex;
+  gap: 8px;
+}
+
+/* ====== 响应式 ====== */
+@media (max-width: 1100px) {
+  .broadsheet { grid-template-columns: 1fr 1fr; }
+  .broadsheet { border-left: none; }
+  .column:nth-child(odd) { border-left: 1px solid var(--border); }
+}
+@media (max-width: 640px) {
+  .broadsheet { grid-template-columns: 1fr; border-left: none; }
+  .column { border-left: 1px solid var(--border); border-right: 1px solid var(--border); }
+  .masthead h1 { font-size: 1.8rem; }
+  .masthead { padding: 16px 12px 4px; }
+}
+
+/* ====== 打印友好 ====== */
+@media print {
+  :root { --bg: #fff; --paper: #fff; }
+  body { font-size: 10pt; }
+  .broadsheet { max-width: 100%; grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .article-title { font-size: 8pt; }
+  .article-summary { font-size: 7pt; }
+}
+
+/* 页脚 */
+.footer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 20px 32px 40px;
+  text-align: center;
+  font-size: .75rem;
+  color: var(--text-muted);
+  font-family: var(--title-serif);
+}
+.footer a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<!-- ============ 报头 ============ -->
+<header class="masthead">
+  <div class="dateline">2026-06-27 · MIDDLE EAST DAILY BRIEF</div>
+  <h1>中东<em>每日简报</em></h1>
+  <div class="subhead">政治 · 外交 · 经济 · 军事冲突</div>
+</header>
+
+<!-- ============ 四栏主体 ============ -->
+<div class="broadsheet">
+
+
+
+
+  <div class="column col-political">
+    <div class="col-header">
+      <span class="col-emoji">🏛️</span>
+      <div class="col-title-zh">政治</div>
+      <div class="col-title-en">Politics</div>
+      
+      <div class="col-count">115 篇报道</div>
+    </div>
+    <div class="article-list">
+    
+    
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/health-and-wellness/mind-and-spirit/article-900493" target="_blank" rel="noopener noreferrer">The shoreline that holds: October 7 post-trauma therapists embark on a healing retreat</a>
+        </div>
+        
+        <div class="article-summary">For years, many of these therapists have sat with survivors, bereaved parents, evacuated families, children who lost their sense of safety, and communities trying to return to life.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T08:31</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/health-and-wellness/pregnancy-and-birth/article-900508" target="_blank" rel="noopener noreferrer">Common painkillers are safe during pregnancy, don&#39;t raise birth defect risk, Israeli study finds</a>
+        </div>
+        
+        <div class="article-summary">A large Ben-Gurion University of the Negev study challenges concerns over common painkillers in pregnancy, finding no link to birth defects.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T07:43</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/science/article-900503" target="_blank" rel="noopener noreferrer">Can virtual reality teach the &#39;feel&#39; of medicine? New Israeli study says not yet</a>
+        </div>
+        
+        <div class="article-summary">Ancient dissections of Galen reveal a gap in modern medical training: tacit, hands-on skills still can’t be fully taught by digital tools.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T07:39</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/international/2512232/" target="_blank" rel="noopener noreferrer">ارتفاع عدد ضحايا الزلزالين في فنزويلا إلى 920 قتيلاً</a>
+        </div>
+        
+        <div class="article-summary">ارتفع عدد ضحايا الزلزالين اللذين ضربا فنزويلا الأربعاء الماضي ‏إلى 920 ‏قتيلاً، وفق ما أعلنت الحكومة الفنزويلية.‏</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:56</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A8%D9%88%D8%B1%D9%83%D9%8A%D9%86%D8%A7-%D9%81%D8%A7%D8%B3%D9%88-%D8%AA%D9%82%D8%B7%D8%B9-%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA%D9%87%D8%A7-%D9%85%D8%B9-%D9%81%D8%B1%D9%86%D8%B3%D8%A7-%D9%88%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3-%D8%AA%D8%B5%D9%81-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1-%D8%A8%D9%80%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D8%A6%D9%8A/3979502" target="_blank" rel="noopener noreferrer">بوركينا فاسو تقطع علاقاتها مع فرنسا وباريس تصف القرار بـ&#34;العدائي&#34;</a>
+        </div>
+        
+        <div class="article-summary">- حكومة بوركينا فاسو قالت في بيان إن الخطوة جاءت بعد مراجعة شاملة لطبيعة العلاقات بين البلدين</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:50</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D8%AA%D8%AC%D9%85%D8%B9-%D8%B9%D8%B4%D8%A7%D8%A6%D8%B1-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%8A%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%A7%D9%86%D9%82%D8%B3%D8%A7%D9%85-%D9%88%D9%8A%D8%A4%D9%83%D8%AF-%D8%AF%D8%B9%D9%85-%D9%85%D8%A4%D8%B3%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9/3979495" target="_blank" rel="noopener noreferrer">تجمع عشائر لبنان يحذر من الانقسام ويؤكد دعم مؤسسات الدولة</a>
+        </div>
+        
+        <div class="article-summary">بيان لتجمع العشائر العربية حذر فيه من الفوضى عقب احتجاجات لمناصري &#34;حزب الله&#34; على توقيع اتفاق إطار مع إسرائيل..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:41</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/culture-and-arts/2512224/" target="_blank" rel="noopener noreferrer">المفكرة الثقافية في سوريا ليوم السبت الـ 27 من حزيران 2026</a>
+        </div>
+        
+        <div class="article-summary">المفكرة الثقافية في سوريا ليوم السبت الـ 27 من حزيران 2026</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:38</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D9%81%D8%A7%D9%86%D8%B3-%D8%A8%D8%A5%D9%85%D9%83%D8%A7%D9%86-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D9%85%D8%B9%D9%86%D8%A7-%D8%A5%D8%B0%D8%A7-%D9%84%D8%AF%D9%8A%D9%87%D8%A7-%D8%AE%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82/3979484" target="_blank" rel="noopener noreferrer">فانس: بإمكان إيران التواصل معنا إذا لديها خلافات بشأن تطبيق الاتفاق</a>
+        </div>
+        
+        <div class="article-summary">نائب الرئيس الأمريكي فانس حذر في تدوينة من أن &#34;الرد على العنف سيكون بعنف&#34;..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:17</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/locals/2512216/" target="_blank" rel="noopener noreferrer">ارتفاع طفيف بدرجات الحرارة والطقس حار نسبياً في أغلب ‏المناطق السورية‎ ‎</a>
+        </div>
+        
+        <div class="article-summary">تميل درجات الحرارة اليوم السبت للارتفاع قليلاً لتصبح أعلى من ‏معدلاتها السنوية بحوالي 1-3 درجات مئوية في أغلب المناطق ‏السورية‎.‎</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:04</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D9%82%D8%AF%D9%85-%D9%85%D8%B5%D8%B1-%D8%AA%D8%A8%D9%84%D8%BA-%D8%A7%D9%84%D8%A3%D8%AF%D9%88%D8%A7%D8%B1-%D8%A7%D9%84%D8%A5%D9%82%D8%B5%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A8%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D9%84%D8%A3%D9%88%D9%84-%D9%85%D8%B1%D8%A9-%D9%81%D9%8A-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%87%D8%A7/3979470" target="_blank" rel="noopener noreferrer">قدم.. مصر تبلغ الأدوار الإقصائية بكأس العالم لأول مرة في تاريخها</a>
+        </div>
+        
+        <div class="article-summary">بعد تعادلها مع إيران 1-1 في الجولة الثالثة لمنافسات المجموعة السابعة..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:36</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A7%D9%84%D8%A3%D8%AC%D9%86%D8%AF%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A%D8%A9-%D9%84%D9%84%D9%86%D8%B4%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%A8%D8%AA-27-%D9%8A%D9%88%D9%86%D9%8A%D9%88-2026/3979468" target="_blank" rel="noopener noreferrer">الأجندة اليومية للنشرة العربية - السبت 27 يونيو 2026</a>
+        </div>
+        
+        <div class="article-summary">تجدون تاليا المتابعات الإخبارية والتقارير الخاصة بأجندة النشرة العربية ليوم السبت 27 يونيو 2026</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:21</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AA%D9%88%D9%86%D8%B3/%D8%AA%D9%88%D9%86%D8%B3-%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D8%AA%D9%82%D8%B1-%D8%AD%D9%83%D9%85%D8%A7-%D8%A8%D9%804-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D8%B3%D8%AC%D9%86%D8%A7-%D8%B6%D8%AF-%D9%82%D9%8A%D8%A7%D8%AF%D9%8A%D9%8A%D9%86-%D9%85%D9%86-%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9/3979467" target="_blank" rel="noopener noreferrer">تونس.. محكمة الاستئناف تقر حكما بـ4 سنوات سجنا ضد قياديين من النهضة</a>
+        </div>
+        
+        <div class="article-summary">هما وزير العدل الأسبق نور الدين البحيري ونائب رئيس الحركة منذر الونيسي، في قضية وفاة النائب السابق الجيلاني الدبوسي، بحسب تصريح لمصدر قضائي لوكالة الأنباء التونسية</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:21</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AA%D9%88%D9%86%D8%B3/%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%AA%D9%88%D9%86%D8%B3%D9%8A%D8%A9-%D8%AA%D9%82%D8%B1-%D8%AD%D9%83%D9%85%D8%A7-%D8%A8%D8%A7%D9%84%D8%B3%D8%AC%D9%86-%D8%B3%D9%86%D8%A9-%D8%A8%D8%AD%D9%82-%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A-%D8%B2%D9%8A%D8%A7%D8%AF-%D8%A7%D9%84%D9%87%D8%A7%D9%86%D9%8A/3979466" target="_blank" rel="noopener noreferrer">محكمة تونسية تقر حكما بالسجن سنة بحق الصحفي زياد الهاني</a>
+        </div>
+        
+        <div class="article-summary">وفقا لما نقلته وكالة الأنباء التونسية عن مصدر قضائي</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:21</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86/%D8%BA%D8%B2%D8%A9-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A8%D8%AA%D8%B1%D8%AA-%D8%B3%D8%A7%D9%82%D9%87-%D9%81%D9%8A-%D8%B3%D8%AC%D9%88%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%8A%D9%81%D8%AC%D8%B9-%D8%A8%D9%85%D9%82%D8%AA%D9%84-%D8%A7%D8%A8%D9%86%D9%87-%D8%A7%D9%84%D9%88%D8%AD%D9%8A%D8%AF-%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D8%A5%D8%AE%D8%A8%D8%A7%D8%B1%D9%8A/3979464" target="_blank" rel="noopener noreferrer">غزة.. فلسطيني بترت ساقه في سجون إسرائيل يفجع بمقتل ابنه الوحيد</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:21</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/27/egypt-enter-world-cup-knockouts-for-first-time-in-history-after-dramatic-draw-with-iran/" target="_blank" rel="noopener noreferrer">Egypt enter World Cup knockouts for first time in history after dramatic draw with Iran</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:21</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D9%85%D9%86%D8%A7%D8%B5%D8%B1%D9%88%D9%86-%D9%84%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%84%D9%87-%D9%8A%D9%82%D8%B7%D8%B9%D9%88%D9%86-%D8%B7%D8%B1%D9%8A%D9%82%D8%A7-%D8%A8%D8%A8%D9%8A%D8%B1%D9%88%D8%AA-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%85%D8%B9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84/3979463" target="_blank" rel="noopener noreferrer">مناصرون لحزب الله يقطعون طريقا ببيروت احتجاجا على الاتفاق مع إسرائيل</a>
+        </div>
+        
+        <div class="article-summary">وفق وكالة الأنباء اللبنانية..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:21</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D9%85%D9%88%D9%86%D8%AF%D9%8A%D8%A7%D9%84-2026-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%88%D8%AF%D8%B9-%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A8%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%B3%D9%86%D8%BA%D8%A7%D9%84-0-5/3979462" target="_blank" rel="noopener noreferrer">مونديال 2026.. العراق يودع كأس العالم بالخسارة أمام السنغال 0-5</a>
+        </div>
+        
+        <div class="article-summary">وعثمان ديمبيلي يسجل ثاني أسرع هاتريك في تاريخ البطولة ليقود فرنسا للفوز على النرويج 4-1</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:21</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/israel-news/politics-and-diplomacy/article-900630" target="_blank" rel="noopener noreferrer">Eisenkot files petition demanding Smotrich remove &#39;manipulative&#39; AI-generated video</a>
+        </div>
+        
+        <div class="article-summary">Eisenkot’s petition accused Smotrich of attempting to “spread hatred, lies, and mislead voters,” stating that “there is no place for lying, deception, and manipulation in the current election system.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:20</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/27/dismal-world-cup-exit-shows-cristiano-ronaldo-experiment-is-failing-saudi-arabia-national-team/" target="_blank" rel="noopener noreferrer">Dismal World Cup exit shows Cristiano Ronaldo experiment is failing Saudi Arabia national team</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T04:30</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/24/which-teams-have-qualified-for-world-cup-2026-knockouts-and-which-sides-are-out/" target="_blank" rel="noopener noreferrer">Which teams have qualified for World Cup 2026 knockouts and which sides are out?</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T03:58</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/arts-culture/music-stage/2026/06/27/concerts-events-uae-abu-dhabi-dubai/" target="_blank" rel="noopener noreferrer">Top 36 concerts and events coming to the UAE, from Andrea Bocelli to Shakira</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T03:34</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/27/cape-verde-set-up-world-cup-showdown-with-argentina-as-saudi-arabias-campaign-ends/" target="_blank" rel="noopener noreferrer">Cape Verde set up World Cup showdown with Argentina as Saudi Arabia&#39;s campaign ends</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T02:59</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/israel-news/culture/article-900585" target="_blank" rel="noopener noreferrer">&#39;Tuner&#39; mixes classical music, crime, and Dustin Hoffman - review</a>
+        </div>
+        
+        <div class="article-summary">Much of the comedy in the movie comes from Uri browbeating the two, and if you can understand the Hebrew, it’s even funnier than the subtitles.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T02:36</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/israel-news/culture/article-900582" target="_blank" rel="noopener noreferrer">What to watch this week: Gal Gadot buoyant in an otherwise sinking ship in &#39;In the Hand of Dante&#39;</a>
+        </div>
+        
+        <div class="article-summary">TV Time: To quote Nick from an early scene, “You look at anything long enough, you see what’s wrong with it.” You will see what’s wrong with In the Hand of Dante in a very short time, sadly.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T02:33</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/diaspora/article-900628" target="_blank" rel="noopener noreferrer">Jewish leaders defend Hakeem Jeffries from DSA political attacks</a>
+        </div>
+        
+        <div class="article-summary">House Minority Leader Hakeem Jeffries has drawn the ire of progressives over the years as a moderate lawmaker with an endorsement from AIPAC.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T02:23</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/lifestyle/fashion-beauty/2026/06/27/uae-best-non-invasive-facials-lift-tighten-brighten/" target="_blank" rel="noopener noreferrer">Non-invasive facials for lifting, brightening, tightening and hydration in the UAE</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T02:19</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/27/iraq-senegal-toronto/" target="_blank" rel="noopener noreferrer">Senegal&#39;s Lions of Teranga maul Iraq&#39;s Lions of Mesopotamia</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T00:08</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/iranian-lawmaker-says-us-strikes-during-talks-will-lead-to-retreat-and-regret-/3979445" target="_blank" rel="noopener noreferrer">Iranian lawmaker says US strikes during talks will lead to ‘retreat and regret’</a>
+        </div>
+        
+        <div class="article-summary">Ibrahim Azizi says Washington violated principles of negotiations with attacks on Iran</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T00:01</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%B3%D9%88%D8%B1%D9%8A%D8%A7/%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D8%AA%D9%88%D8%BA%D9%84-%D8%A8%D8%B1%D9%8A%D9%81-%D8%AF%D8%B1%D8%B9%D8%A7-%D9%88%D8%AA%D9%86%D8%AA%D8%B4%D8%B1-%D8%A8%D9%8A%D9%86-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86/3979416" target="_blank" rel="noopener noreferrer">سوريا.. إسرائيل تتوغل بريف درعا وتنتشر بين منازل المدنيين</a>
+        </div>
+        
+        <div class="article-summary">في قرية جملة، وفق قناة &#34;الإخبارية السورية&#34;..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T21:20</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D9%84%D9%8A%D8%A8%D8%B1%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%85%D8%B9-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%84%D9%86-%D9%8A%D9%85%D9%86%D8%B9-%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/3979414" target="_blank" rel="noopener noreferrer">ليبرمان: الاتفاق مع لبنان لن يمنع اندلاع مواجهة جديدة</a>
+        </div>
+        
+        <div class="article-summary">زعيم حزب &#34;إسرائيل بيتنا&#34; المعارض قال إن تعاظم قوة &#34;حزب الله&#34; يجعل المواجهة المقبلة مسألة وقت</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T21:20</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D8%AA%D8%B3%D8%AA%D8%B6%D9%8A%D9%81-%D9%82%D9%85%D8%A9-%D8%B1%D8%A4%D8%B3%D8%A7%D8%A1-%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D8%A7%D8%AA%D9%88-%D8%A8%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-20-%D8%B1%D8%A6%D9%8A%D8%B3%D8%A7/3979393" target="_blank" rel="noopener noreferrer">إسطنبول تستضيف قمة رؤساء برلمانات الناتو بمشاركة 20 رئيسا</a>
+        </div>
+        
+        <div class="article-summary">تعد قمة رؤساء برلمانات الناتو منصة لتعزيز التنسيق البرلماني قبل انعقاد قمم قادة الحلف</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:56</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D8%B3%D9%84%D8%A7%D9%85-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D9%8A%D9%87%D8%AF%D9%81-%D8%A5%D9%84%D9%89-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84-%D9%85%D9%86-%D9%84%D8%A8%D9%86%D8%A7%D9%86-/3979381" target="_blank" rel="noopener noreferrer">سلام: اتفاق الإطار يهدف إلى انسحاب إسرائيل الكامل من لبنان</a>
+        </div>
+        
+        <div class="article-summary">رئيس الوزراء اللبناني قال في بيان إن الاتفاق &#34;ينص على استعادة سيادة الدولة وبسط سلطتها على كامل الأراضي اللبنانية&#34;</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:41</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AA%D8%B1%D9%83%D9%8A%D8%A7/%D8%B4%D9%8A%D9%83%D8%A7%D8%BA%D9%88-%D8%AA%D8%B9%D9%84%D9%86-%D8%A3%D8%BA%D8%B3%D8%B7%D8%B3-%D8%B4%D9%87%D8%B1-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A-%D8%AA%D9%82%D8%AF%D9%8A%D8%B1%D8%A7-%D9%84%D8%A5%D8%B3%D9%87%D8%A7%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%AA%D8%B1%D8%A7%D9%83-%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A%D9%8A%D9%86/3979378" target="_blank" rel="noopener noreferrer">شيكاغو تعلن أغسطس &#34;شهر التراث التركي&#34; تقديرا لإسهامات الأتراك الأميركيين</a>
+        </div>
+        
+        <div class="article-summary">في إعلان رسمي سُلّم إلى رئيس لجنة مؤتمر المهرجان الثقافي التركي خليل دمير..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:35</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AA%D8%B1%D9%83%D9%8A%D8%A7/%D9%81%D9%8A%D8%AF%D8%A7%D9%86-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D8%A8%D9%8A%D9%86-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D9%88%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%85%D9%87%D9%85-%D9%88%D8%AA%D9%88%D8%B3%D9%8A%D8%B9%D9%87-%D8%A5%D9%84%D9%89-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A5%D9%8A%D8%AC%D8%A7%D8%A8%D9%8A/3979377" target="_blank" rel="noopener noreferrer">فيدان: وقف إطلاق النار بين أمريكا وإيران مهم وتوسيعه إلى لبنان إيجابي</a>
+        </div>
+        
+        <div class="article-summary">جاء ذلك في تصريحات للوزير التركي، الجمعة، خلال مؤتمر صحفي مشترك عقب لقائه وزيرة خارجية كندا أنيتا أناند، في العاصمة أوتاوا.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:35</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AA%D8%B1%D9%83%D9%8A%D8%A7/%D9%88%D8%B2%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D8%A7%D9%84%D9%83%D9%86%D8%AF%D9%8A%D8%A9-%D9%82%D9%85%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%AA%D9%88-%D9%81%D9%8A-%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%B3%D8%AA%D9%83%D9%88%D9%86-%D9%85%D8%AD%D8%B7-%D8%AA%D9%88%D9%82%D8%B9%D8%A7%D8%AA-%D9%83%D8%A8%D9%8A%D8%B1%D8%A9/3979363" target="_blank" rel="noopener noreferrer">وزيرة الخارجية الكندية: قمة الناتو في أنقرة ستكون محط توقعات كبيرة</a>
+        </div>
+        
+        <div class="article-summary">خلال مؤتمر صحفي مشترك مع وزير الخارجية التركي هاكان فيدان في العاصمة أوتاوا..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:23</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/lebanon-israel-deal-1st-step-toward-complete-undiminished-sovereignty-lebanese-president/3979356" target="_blank" rel="noopener noreferrer">Lebanon-Israel deal 1st step toward ‘complete, undiminished’ sovereignty: Lebanese president</a>
+        </div>
+        
+        <div class="article-summary">Prime Minister Nawaf Salam says framework aims for full Israeli withdrawal from Lebanese territory</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:16</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/future/technology/2026/06/27/openai-news-gpt-white-house/" target="_blank" rel="noopener noreferrer">OpenAI acquiesces to White House worries about GPT 5.6</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T19:44</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86%D9%8A-%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%84%D9%87-%D8%B9%D9%86-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%85%D8%B9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%87%D8%AF%D9%8A%D8%A9-%D9%84%D9%84%D8%B9%D8%AF%D9%88-%D9%88%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%D8%AA%D9%86%D8%A7-%D8%AC%D8%AF%D9%8A%D8%A9/3979338" target="_blank" rel="noopener noreferrer">برلماني &#34;حزب الله&#34; عن الاتفاق مع إسرائيل: هدية للعدو ومعارضتنا جدية</a>
+        </div>
+        
+        <div class="article-summary">تصريحات صحفية للنائب حسن فضل الله قال فيها: &#34;سنتمسك بسلاحنا أكثر&#34;..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T19:44</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D9%81%D9%8A%D8%AF%D8%A7%D9%86-%D9%82%D9%85%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%AA%D9%88-%D9%81%D9%8A-%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%B3%D8%AA%D9%83%D9%88%D9%86-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%D8%A9/3979337" target="_blank" rel="noopener noreferrer">فيدان: قمة الناتو في أنقرة ستكون تاريخية</a>
+        </div>
+        
+        <div class="article-summary">جاء ذلك في تصريحات للوزير التركي، خلال مؤتمر صحفي مشترك عقب لقائه نظيرته الكندية أنيتا أناند، في العاصمة أوتاوا.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T19:41</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%A7%D9%84%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/%D8%B9%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%85%D8%B9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AE%D8%B7%D9%88%D8%A9-%D9%84%D8%A7%D8%B3%D8%AA%D8%B9%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AF%D8%A9-%D9%88%D8%B9%D9%88%D8%AF%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%B2%D8%AD%D9%8A%D9%86/3979324" target="_blank" rel="noopener noreferrer">عون: الاتفاق مع إسرائيل خطوة لاستعادة السيادة وعودة النازحين</a>
+        </div>
+        
+        <div class="article-summary">قال الرئيس اللبناني: &#34;نقسم على مواصلة العمل حتى لا يبقى احتلال ولا أسرى ولا تبعية ولا وصاية&#34;</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T19:27</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/26/poor-response-to-call-for-mass-protests-in-gaza-over-living-conditions/" target="_blank" rel="noopener noreferrer">Poor response to call for mass protests in Gaza over living conditions</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:45</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/netanyahu-says-israeli-army-will-remain-in-southern-lebanon-security-zone-until-hezbollah-disarmed/3979285" target="_blank" rel="noopener noreferrer">Netanyahu says Israeli army will remain in southern Lebanon ‘security zone’ until Hezbollah disarmed</a>
+        </div>
+        
+        <div class="article-summary">Israel-Lebanon deal allows Lebanese army deployment in designated areas based on Israeli army ‘recommendation,’ Israeli prime minister says</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:38</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/us-judge-wont-immediately-dismiss-criminal-charges-against-indias-adani" target="_blank" rel="noopener noreferrer">US judge won&#39;t immediately dismiss criminal charges against India&#39;s Adani</a>
+        </div>
+        
+        <div class="article-summary">NEW YORK, June 26 (Reuters) - A U.S. judge on Friday ordered the Justice Department to justifyits decision to drop criminal charges against Indian billionaire Gautam Adani, declining to rule immediately on Adani&#39;s lawyers&#39; request earlier in the week to formally dismiss the case.(Reporting by Luc Cohen in New York)</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:36</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/arts-culture/2026/06/26/uae-host-fifa-world-cup-2003-stars/" target="_blank" rel="noopener noreferrer">Timeframe: When the UAE hosted football&#39;s future stars at the Youth World Cup in 2003</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:02</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/arts-culture/film-tv/2026/06/26/summer-movies-bollywood-malayalam-yash-toxic/" target="_blank" rel="noopener noreferrer">The biggest Indian films being released this summer, from Alpha to Toxic</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:02</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/business/money/2026/06/26/dubai-salary-jobs-freelance-nail-artist-business/" target="_blank" rel="noopener noreferrer">My Dubai Salary: &#39;I earned Dh40,000 a month as a freelance nail artist – now I&#39;ve opened my own salon&#39;</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:02</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/arts-culture/2026/06/26/learn-arabic-batal-champion/" target="_blank" rel="noopener noreferrer">&#39;Batal’: The Arabic word for champion echoes through the World Cup</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:02</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/2026/06/26/pictures-of-the-week-from-cooling-off-in-spains-heatwave-to-abu-dhabis-new-train-station/" target="_blank" rel="noopener noreferrer">Pictures of the week: From cooling off in Spain’s heatwave to Abu Dhabi&#39;s new train station</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:01</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/opinion/cartoon/2026/06/26/europe-heatwave-weather/" target="_blank" rel="noopener noreferrer">Cartoon for June 27, 2025</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/lifestyle/things-to-do/2026/06/26/museums-of-the-uae-masfout-ajman-hajar/" target="_blank" rel="noopener noreferrer">Museums of the UAE: Ajman&#39;s Masfout is a mountain fort worth the detour</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/lifestyle/2026/06/26/fifa-world-cup-arabic-commentator-chaouali-mohamed-ali-badda-derradji/" target="_blank" rel="noopener noreferrer">The joy and agony of listening to Arabic commentary during the World Cup</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/international/article-900618" target="_blank" rel="noopener noreferrer">Israeli-American Emanuel Sharp, son of Maccabi TA legend Derrick Sharp, gets drafted to the NBA</a>
+        </div>
+        
+        <div class="article-summary">Following an outstanding career at the University of Houston, Emanuel joins a growing list of Israeli basketball talent to reach the NBA.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T17:29</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/future/technology/2026/06/26/ibm-stock-chip-semiconductor-ai/" target="_blank" rel="noopener noreferrer">IBM introduces &#39;first sub-1 nanometre chip&#39; technology</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T16:30</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/26/abu-dhabi-to-trial-new-cancer-treatment-in-drive-to-revolutionise-chemotherapy/" target="_blank" rel="noopener noreferrer">Abu Dhabi to trial new cancer treatment in drive to &#39;revolutionise&#39; chemotherapy</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T16:04</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/gulf/2026/06/26/we-dont-know-anything-about-300bn-iran-reconstruction-fund-says-gcc-secretary-general/" target="_blank" rel="noopener noreferrer">We don&#39;t know anything about $300bn Iran reconstruction fund, says GCC Secretary General</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T16:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/uae-foreign-minister-holds-1st-publicly-announced-call-with-iranian-counterpart-since-outbreak-of-war/3979135" target="_blank" rel="noopener noreferrer">UAE foreign minister holds 1st publicly announced call with Iranian counterpart since outbreak of war</a>
+        </div>
+        
+        <div class="article-summary">Bin Zayed stresses full compliance with US-Iran memorandum of understanding, says diplomacy remains preferred means of resolving crises</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T15:48</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/26/sheikh-abdullah-receives-call-from-irans-foreign-minister/" target="_blank" rel="noopener noreferrer">Sheikh Abdullah receives call from Iran&#39;s Foreign Minister</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T15:17</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/us/2026/06/26/john-bolton-pleads-guilty-to-mishandling-sensitive-documents/" target="_blank" rel="noopener noreferrer">John Bolton pleads guilty to mishandling sensitive documents</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T14:31</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/israel-news/article-900608" target="_blank" rel="noopener noreferrer">Police documents about Nova music festival deleted from computer system - report</a>
+        </div>
+        
+        <div class="article-summary">The deletion took place sometime during January 2024, and it is unknown who removed the files and whether copies of them still exist.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T13:41</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uk/2026/06/26/steep-property-discounts-lure-gulf-buyers-back-to-london/" target="_blank" rel="noopener noreferrer">Steep property discounts lure Gulf buyers back to London</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T12:45</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/far-right-israeli-minister-urges-ending-lebanon-ceasefire-after-troops-injured/3978906" target="_blank" rel="noopener noreferrer">Far-right Israeli minister urges ending Lebanon ceasefire after troops injured</a>
+        </div>
+        
+        <div class="article-summary">Israeli ministers criticize restrictions on military offensives as Washington presses for de-escalation during Lebanon-Israel talks</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T12:45</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/sport/f1/2026/06/26/austrian-grand-prix-2026-hamiltons-ferrari-revival-red-bull-upgrades-and-mercedes-concerns/" target="_blank" rel="noopener noreferrer">Austrian Grand Prix 2026: Hamilton&#39;s Ferrari revival, Red Bull upgrades and Mercedes concerns</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T11:45</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/2026/06/26/quiz-of-the-week-june-26-2026/" target="_blank" rel="noopener noreferrer">Quiz of the week: June 26, 2026</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T11:44</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/travel/2026/06/26/every-airline-flying-between-the-uae-and-six-new-visa-on-arrival-countries/" target="_blank" rel="noopener noreferrer">Every airline flying between the UAE and six new visa-on-arrival countries</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T10:44</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/26/tabby-apologises-to-customers-wrongly-told-they-won-dh5000-emirates-flight-raffle/" target="_blank" rel="noopener noreferrer">Tabby apologises to customers wrongly told they won Dh5,000 Emirates flight raffle</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T10:39</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/iran-says-hormuz-passage-cannot-be-guaranteed-without-coordination-with-tehran/3978739" target="_blank" rel="noopener noreferrer">Iran says Hormuz passage cannot be guaranteed without coordination with Tehran</a>
+        </div>
+        
+        <div class="article-summary">Tehran pushes back against US-GCC call for &#39;free, unconditional&#39; Hormuz navigation</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T10:23</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/26/dispute-persists-over-proposed-areas-of-israeli-withdrawal-from-southern-lebanon/" target="_blank" rel="noopener noreferrer">Dispute persists over proposed areas of Israeli withdrawal from southern Lebanon</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T09:50</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/arts-culture/2026/06/26/greece-returns-ancient-egyptian-figurines-after-artefact-trafficking-investigation/" target="_blank" rel="noopener noreferrer">Greece returns ancient Egyptian figurines after artefact trafficking investigation</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T09:09</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/lebanese-president-welcomes-french-italian-initiative-for-post-unifil-international-coalition/3978619" target="_blank" rel="noopener noreferrer">Lebanese president welcomes French-Italian initiative for post-UNIFIL international coalition</a>
+        </div>
+        
+        <div class="article-summary">Joseph Aoun says proposal reflects international commitment to Lebanon&#39;s sovereignty and backs Lebanese Army&#39;s role in securing south</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T08:37</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uk/2026/06/26/buckingham-palaces-reign-as-home-of-uk-monarch-ends-after-nearly-200-years/" target="_blank" rel="noopener noreferrer">Buckingham Palace&#39;s reign as home of UK monarch ends after nearly 200 years</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T08:27</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/26/uae-medics-on-floating-hospital-perform-complex-surgeries-on-four-more-gazan-patients/" target="_blank" rel="noopener noreferrer">UAE medics on floating hospital perform complex surgeries on four more Gazan patients</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T07:43</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/magazine/2026/06/26/saba-mubarak-portrait-of-an-artist/" target="_blank" rel="noopener noreferrer">Saba Mubarak: Portrait of an artist</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T07:14</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/عاش-يا-أبطال-كاريكاتير-اليوم-السابع-يحتفى-بتأهل-منتخب-مصر/7462534" target="_blank" rel="noopener noreferrer">عاش يا أبطال.. كاريكاتير اليوم السابع يحتفى بتأهل منتخب مصر لدور الـ32</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/اتحاد-الكرة-حالة-صلاح-مطمئنة-وقلق-حول-عبد-المنعم-وفتوح/7462488" target="_blank" rel="noopener noreferrer">اتحاد الكرة: حالة صلاح مطمئنة وقلق حول عبد المنعم وفتوح قبل موقعة أستراليا</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/منتخب-مصر-يحتج-فى-فيفا-على-إنذار-مهند-لاشين-لضمان/7462506" target="_blank" rel="noopener noreferrer">منتخب مصر يحتج فى فيفا على إنذار مهند لاشين لضمان مشاركته بمباراة أستراليا</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/8-مواجهات-نارية-فى-دور-الـ32-بكأس-العالم-2026-مصر/7462489" target="_blank" rel="noopener noreferrer">8 مواجهات نارية فى دور الـ32 بكأس العالم 2026.. مصر تصطدم بأستراليا</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/احتفالات-جنونية-بشوارع-دمياط-بعد-صعود-منتخب-مصر-لدور-ال/7462502" target="_blank" rel="noopener noreferrer">احتفالات جنونية بشوارع دمياط بعد صعود منتخب مصر لدور ال 32 في كأس العالم</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/جماهير-الإسكندرية-تحتفل-على-الكورنيش-بعد-صعود-منتخب-مصر-لدور/7462505" target="_blank" rel="noopener noreferrer">جماهير الإسكندرية تحتفل على الكورنيش بعد صعود منتخب مصر لدور الـ 32.. صور</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/الكشف-عن-تفاصيل-إصابة-محمد-صلاح-وفتوح-وعبد-المنعم/7462501" target="_blank" rel="noopener noreferrer">الكشف عن تفاصيل إصابة محمد صلاح وفتوح وعبد المنعم</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/زيزو-التأهل-لدور-الـ32-إنجاز-تاريخي-وهدفنا-الاستمرار-في-المونديال/7462487" target="_blank" rel="noopener noreferrer">زيزو: التأهل لدور الـ32 إنجاز تاريخي وهدفنا الاستمرار في المونديال</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/ملخص-مباراة-وأهداف-مصر-وإيران-في-الجولة-الأخيرة-بمجموعات-كأس/7462499" target="_blank" rel="noopener noreferrer">ملخص مباراة وأهداف مصر وإيران في الجولة الأخيرة بمجموعات كأس العالم 2026</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/نقل-محمد-عبد-المنعم-إلى-المستشفى-بعد-إصابة-قوية-في/7462486" target="_blank" rel="noopener noreferrer">نقل محمد عبد المنعم إلى المستشفى بعد إصابة قوية في الكاحل أمام إيران</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/مواعيد-مباريات-اليوم-الجزائر-ضد-النمسا-والأردن-أمام-الأرجنتين/7461642" target="_blank" rel="noopener noreferrer">جانب من مباراة الجزائر والأردن في كأس العالم 2026</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/شاهد-احتفالات-الجماهير-المصرية-فى-جامعة-الدول-بعد-تأهل-الفراعنة/7462514" target="_blank" rel="noopener noreferrer">احتفالات فى شارع جامعة الدول</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/عدد-أسئلة-امتحان-العربى-للثانوية-ونصائح-للطلاب-قبل-انطلاق-الاختبار/7462513" target="_blank" rel="noopener noreferrer">عدد أسئلة امتحان العربى للثانوية ونصائح للطلاب قبل انطلاق الاختبار غدا</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/عادات-يومية-تزيد-من-خطر-الإصابة-بمرض-السكر-لدى-الأطفال/7461894" target="_blank" rel="noopener noreferrer">عادات يومية تزيد من خطر الإصابة بمرض السكر لدى الأطفال</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/بتيشرتات-المنتخب-وأعلام-مصر-أهالى-بنى-سويف-يحتفلون-بصعود-منتخب/7462521" target="_blank" rel="noopener noreferrer">بتيشرتات المنتخب وأعلام مصر.. أهالى بنى سويف يحتفلون بصعود منتخب مصر</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/الفراعنة-يواصلون-حلم-المونديال-ويضربون-موعدًا-تاريخياً-مع-أستراليا-في/7462478" target="_blank" rel="noopener noreferrer">7462478</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/العالم-هذا-الصباح-الحرس-الثورى-الإيرانى-يعلن-استهداف-18-موقعاً/7462360" target="_blank" rel="noopener noreferrer">الرئيس الأمريكى دونالد ترامب</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/من-وعود-ما-بعد-الثورة-إلى-اتساع-الغضب-الشعبي-كيف/7461239" target="_blank" rel="noopener noreferrer">الإخوان وثورة 30 يونيو</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/كواليس-سقوط-جمهورية-المرشد-فى-قلاع-المهنيين-سنوات-من-الاختطاف/7460836" target="_blank" rel="noopener noreferrer">صورة تعبيرية لعمال مصر وقت ثورة 30 يونيو 2013</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/مهنة-الكَلة-حكاية-عمل-توارثها-الأجيال-بحلايب-وشلاتين-تنظم-تحميل/7450431" target="_blank" rel="noopener noreferrer">تحميل الجمال</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/المواطن-أولًا-إشادات-برلمانية-بقرار-الرئيس-السيسى-بزيادة-المعاشات-15/7461015" target="_blank" rel="noopener noreferrer">مجلس النواب</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/من-فيضانات-الصين-إلى-زلزال-فنزويلا-كوارث-طبيعية-هزت-العالم/7462085" target="_blank" rel="noopener noreferrer">فاجعة فنزويلا</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/بدء-لجنة-مادة-اللغة-الأجنبية-بامتحان-القسم-العلمى-للشهادة-الثانوية/7461998" target="_blank" rel="noopener noreferrer">7461998</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/التشكيل-النهائي-لمجلس-إدارة-نادي-القضاة-بعد-إعلان-النتيجة/7462480" target="_blank" rel="noopener noreferrer">نادي القضاة</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/الخارجية-الفرنسية-نرحب-بمواصلة-تعزيز-شراكتنا-الاستراتيجية-مع-مصر/7462533" target="_blank" rel="noopener noreferrer">علما مصر وفرنسا</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/الصناعة-فى-قلب-الموازنة-الجديدة-حوافز-واسعة-لتعزيز-الإنتاج-وزيادة/7459380" target="_blank" rel="noopener noreferrer">7459380</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/المشروعات-الصغيرة-تتصدر-أولويات-موازنة-2026-2027-اعرف-التفاصيل/7459381" target="_blank" rel="noopener noreferrer">المشروعات الصغيرة</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/من-الأسمدة-إلى-البلاستيك-قطاع-الكيماويات-يقود-مسيرة-التحول-الصناعى/7459709" target="_blank" rel="noopener noreferrer">لجنة القوى العاملة بمجلس النواب</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/تفاصيل-الاشتراطات-المنصوصة-لتأهيل-المبانى-وأماكن-انتظار-السيارات-لذو-الإعاقة/7459772" target="_blank" rel="noopener noreferrer">الأشخاص ذوى الإعاقة</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/تعرف-على-أماكن-ماكينة-الخدمة-الذاتية-المرورية-لإنهاء-التراخيص/7455927" target="_blank" rel="noopener noreferrer">أماكن ماكينة الخدمة الذاتية المرورية لإنهاء التراخيص</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/حريق-هائل-فى-كتان-بالغربية-والدفع-بسيارات-مطافى-لإخماد-النيران/7462334" target="_blank" rel="noopener noreferrer">7462334</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/ضبط-4-متهمين-في-مقتل-بائع-أقمشة-متجول-بطما-والتحريات/7462466" target="_blank" rel="noopener noreferrer">حبس - أرشيفية</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/أكثر-من-100-ألف-سيارة-عادت-لأصحابها-كيف-تسترد-مركبتك/7455727" target="_blank" rel="noopener noreferrer">أكثر من 100 ألف سيارة عادت لأصحابها.. كيف تسترد مركبتك إذا كانت متحفظًا عليها؟</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/النصب-الإلكتروني-كيف-تحمي-نفسك-من-إعلانات-الوظائف-الوهمية/7455720" target="_blank" rel="noopener noreferrer">جريمة النصب الإلكتروني</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/رئيس-جامعة-القاهرة-يصدر-قرارات-بتعيين-وتجديد-تعيين-14-وكيلًا/7462509" target="_blank" rel="noopener noreferrer">تعيين قيادات جديدة بجامعة القاهرة</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/وزير-الرى-السواحل-المصرية-أصول-استراتيجية-يجب-حمايتها-وفق-أسس/7462512" target="_blank" rel="noopener noreferrer">الدكتور هاني سويلم وزير الموارد المائية والري</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/ما-تفوتش-المراجعة-دى-أهم-أسئلة-الكيمياء-المتوقعة-لطلاب-الثانوية/7458454" target="_blank" rel="noopener noreferrer">طلاب الثانوية العامة 2026</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/وزارة-العمل-4-589-مليار-جنيه-منحا-ورعاية-للعمالة-غير/7462475" target="_blank" rel="noopener noreferrer">وزير العمل حسن رداد</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/البنهاوية-لسه-بيحتفلوا-فى-الشارع-بتأهل-المنتخب-المصري-بكأس-العالم/7462535" target="_blank" rel="noopener noreferrer">احتفالات البنهاوية</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/احتفالات-جماهير-البحيرة-بعد-صعود-مصر-لدور-الـ-32-فى/7462504" target="_blank" rel="noopener noreferrer">احتفالات بصعود المنتخب بالبحيرة</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/احتفالات-الجماهير-فى-أسيوط-بتأهل-المنتخب-المصرى-لدور-الـ32-مباشر/7462474" target="_blank" rel="noopener noreferrer">احتفالات الجماهير في أسيوط بتأهل المنتخب المصري لدور الـ32</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/طلاب-العلمي-بالثانوية-الأزهرية-بالإسماعيلية-يؤدون-امتحان-اللغة-الأجنبية-وسط/7462481" target="_blank" rel="noopener noreferrer">طلاب العلمي بالثانوية الأزهرية بالإسماعيلية يؤدون امتحان اللغة الأجنبية</a>
+        </div>
+        
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/الذهب-في-البحرين-يحافظ-على-استقراره-خلال-تعاملات-السبت/7462121" target="_blank" rel="noopener noreferrer">سعر الذهب في البحرين</a>
+        </div>
+        
+        
+      </article>
+      
+    
+    </div>
+  </div>
+
+  <div class="column col-diplomacy">
+    <div class="col-header">
+      <span class="col-emoji">🌍</span>
+      <div class="col-title-zh">外交</div>
+      <div class="col-title-en">Diplomacy</div>
+      
+      <div class="col-count">19 篇报道</div>
+    </div>
+    <div class="article-list">
+    
+    
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/international/article-900635" target="_blank" rel="noopener noreferrer">US seizes nearly 400 websites that were illegally streaming World Cup, DOJ says</a>
+        </div>
+        
+        <div class="article-summary">Servers and domains linked to the unauthorized streaming of the tournament&#39;s matches were targeted in Peru and Bulgaria, with additional disruptions in Croatia, Romania, Poland, and Colombia.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:05</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D9%86%D8%B5-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1%D9%8A-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A-%D8%A8%D9%8A%D9%86-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%88%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%88%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D9%88%D8%AB%D9%8A%D9%82%D8%A9/3979479" target="_blank" rel="noopener noreferrer">نص الاتفاق الإطاري الثلاثي بين لبنان وإسرائيل والولايات المتحدة</a>
+        </div>
+        
+        <div class="article-summary">وكالة الأنباء اللبنانية الرسمية نشرت نص الوثيقة نقلا عن موقع &#34;أكسيوس&#34; الأمريكي</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:55</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/americas/factbox-key-points-in-us-mediated-framework-between-israel-lebanon/3979454" target="_blank" rel="noopener noreferrer">FACTBOX - Key points in US-mediated framework between Israel, Lebanon</a>
+        </div>
+        
+        <div class="article-summary">Lebanon, Israel sign deal after 4 days of US-mediated negotiations for &#39;lasting peace and security’</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T03:19</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/middle-east/article-900623" target="_blank" rel="noopener noreferrer">US, Israel, Lebanon agreement is ‘first step to restoring Lebanon’s sovereignty,&#39; Aoun says</a>
+        </div>
+        
+        <div class="article-summary">Aoun described the agreement as the beginning of a road to bring about freedom and dignity to the people of Lebanon, “who sacrificed, endured, and confronted the harshest conditions.”</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T01:36</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/american-politics/article-900575" target="_blank" rel="noopener noreferrer">Israel is America&#39;s &#39;only true Western ally,&#39; Florida&#39;s GOP House hopeful David Burck tells &#39;Post&#39;</a>
+        </div>
+        
+        <div class="article-summary">US AFFAIRS: Florida Republican David Burck discusses Israel, Iran, campus antisemitism, and why he believes Washington must deepen its alliance with Jerusalem.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T22:19</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%B3%D9%81%D9%8A%D8%B1-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-%D9%84%D8%AF%D9%89-%D9%81%D9%86%D8%B2%D9%88%D9%8A%D9%84%D8%A7-%D9%85%D9%88%D8%A7%D8%B7%D9%86%D9%88%D9%86%D8%A7-%D8%A8%D8%AE%D9%8A%D8%B1-%D9%88%D9%85%D8%B3%D8%AA%D8%B9%D8%AF%D9%88%D9%86-%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9-%D9%84%D9%83%D8%A7%D8%B1%D8%A7%D9%83%D8%A7%D8%B3/3979394" target="_blank" rel="noopener noreferrer">سفير تركيا لدى فنزويلا: مواطنونا بخير ومستعدون لتقديم المساعدة لكاراكاس</a>
+        </div>
+        
+        <div class="article-summary">السفير أيدان قرمان أوغلو أكد للأناضول أن التنسيق جارٍ مع هيئة &#34;آفاد&#34; لإرسال فريق بحث وإنقاذ ومساعدات إنسانية إلى فنزويلا..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:56</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/framework-deal-begins-with-israeli-withdrawal-from-2-pilot-areas-in-southern-lebanon-lebanese-embassy/3979372" target="_blank" rel="noopener noreferrer">Framework deal begins with Israeli withdrawal from 2 pilot areas in southern Lebanon: Lebanese embassy</a>
+        </div>
+        
+        <div class="article-summary">Measures include gradual, comprehensive Israeli withdrawal from all Lebanese territory, full respect for Lebanon’s sovereignty, says embassy in US</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:28</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D9%88%D8%B6%D8%B9-%D8%A8%D9%87%D8%B1%D9%85%D8%B2-%D9%8A%D9%85%D8%B1-%D8%A8%D8%BA%D9%85%D9%88%D8%B6-%D8%B1%D8%BA%D9%85-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D8%A7%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A/3979333" target="_blank" rel="noopener noreferrer">الأمم المتحدة: الوضع بهرمز يمر بغموض رغم الاتفاق الأمريكي الإيراني</a>
+        </div>
+        
+        <div class="article-summary">المتحدث باسم الأمين العام للأمم المتحدة ستيفان دوجاريك دعا جميع الأطراف إلى الالتزام بتعهداتهم بموجب الاتفاق</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T19:35</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/how-competing-visions-over-hormuz-strait-threaten-fragile-iran-us-deal" target="_blank" rel="noopener noreferrer">How competing visions over Hormuz strait threaten fragile Iran-US deal</a>
+        </div>
+        
+        <div class="article-summary">Iran&#39;s latest measures in the strategic waterway expose widening gaps with the US and Gulf states, which could complicate the durability of recent diplomatic breakthroughs.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T19:02</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/lebanon-israel-sign-us-sponsored-framework-deal-in-washington/3979274" target="_blank" rel="noopener noreferrer">Lebanon, Israel sign US-sponsored &#39;framework deal&#39; in Washington</a>
+        </div>
+        
+        <div class="article-summary">Framework &#39;beginning of beginning&#39; for peace, says US Secretary of State Rubio</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:16</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/lifestyle/food/2026/06/26/amaru-dubai-review-madinat-jumeirah/" target="_blank" rel="noopener noreferrer">Is Amaru&#39;s Dh250 eight-course set menu the best fine-dining deal in Dubai?</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:02</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/rubio-announces-framework-agreement-between-israel-and-lebanon-after-talks" target="_blank" rel="noopener noreferrer">Rubio announces framework agreement between Israel and Lebanon after talks in Washington</a>
+        </div>
+        
+        <div class="article-summary">June 26 (Reuters) - U.S. Secretary of State Marco Rubio announced a framework agreement on Friday between Israel and Lebanon after talks in Washington. (Reporting by Daphne Psaledakis, Writing by Christian Martinez; Editing by Doina Chiacu)</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:01</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/26/us-pressure-has-put-straitjacket-on-israel-in-lebanon-says-michael-herzog/" target="_blank" rel="noopener noreferrer">Israel is really restraining itself in Lebanon, says Michael Herzog</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:01</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/us/2026/06/26/lebanon-and-israel-sign-framework-agreement-in-washington/" target="_blank" rel="noopener noreferrer">Lebanon and Israel sign framework agreement in Washington</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T17:53</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/26/russia-and-ukraine-exchange-320-prisoners-after-uae-mediation/" target="_blank" rel="noopener noreferrer">Russia and Ukraine exchange 320 prisoners after UAE mediation</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T17:32</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/115-vessels-2-500-seafarers-evacuated-from-strait-of-hormuz-un-agency/3979176" target="_blank" rel="noopener noreferrer">115 vessels, 2,500 seafarers evacuated from Strait of Hormuz: UN agency</a>
+        </div>
+        
+        <div class="article-summary">International Maritime Organization says efforts ongoing to restart evacuation of stranded seafarers</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T16:29</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/iaea-chief-says-us-iran-deal-grants-agency-access-to-iranian-nuclear-sites/3978774" target="_blank" rel="noopener noreferrer">IAEA chief says US-Iran deal grants agency access to Iranian nuclear sites</a>
+        </div>
+        
+        <div class="article-summary">UN nuclear watchdog has begun technical talks with Iran to prepare inspections under US-Iran agreement, Rafael Grossi says</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T11:02</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/israel-lebanon-split-over-south-withdrawal-in-washington-talks-reports/3978744" target="_blank" rel="noopener noreferrer">Israel, Lebanon split over south withdrawal in Washington talks: Reports</a>
+        </div>
+        
+        <div class="article-summary">Talks stall as Israel refuses full withdrawal from south, Lebanon demands complete pullout</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T10:26</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/lebanon-demands-full-israeli-withdrawal-in-any-washington-deal-senior-official/3978666" target="_blank" rel="noopener noreferrer">Lebanon demands full Israeli withdrawal in any Washington deal: Senior official</a>
+        </div>
+        
+        <div class="article-summary">Senior Lebanese source tells Anadolu that demand for complete pullout under timeline led to extension of 5th round of Washington talks</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T09:33</span>
+        </div>
+        
+      </article>
+      
+    
+    </div>
+  </div>
+
+  <div class="column col-economy">
+    <div class="col-header">
+      <span class="col-emoji">💰</span>
+      <div class="col-title-zh">经济</div>
+      <div class="col-title-en">Economy</div>
+      
+      <div class="col-count">13 篇报道</div>
+    </div>
+    <div class="article-list">
+    
+    
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/diaspora/antisemitism/article-900636" target="_blank" rel="noopener noreferrer">Texas creates required reading list that includes Anne Frank and the Bible</a>
+        </div>
+        
+        <div class="article-summary">Other books on the list include &#34;Charlotte’s Web&#34; by E. B. White and “Animal Farm” by George Orwell.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:23</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/sport/2512183/" target="_blank" rel="noopener noreferrer">الرأس الأخضر يرافق إسبانيا إلى الدور الثاني بعد تعادله مع السعودية وخسارة الأوروغواي</a>
+        </div>
+        
+        <div class="article-summary">رافق منتخب الرأس الأخضر نظيره الإسباني إلى الدور الثاني من مونديال 2026، في أول مشاركة له في البطولة، بعدما فرض التعادل السلبي على المنتخب السعودي في المباراة التي جمعتهما في مدينة هيوستن الأمريكية، مستفيداً من خسارة منتخب الأوروغواي أمام إسبانيا بنتيجة 1-0 ضمن الجولة الثالثة والأخيرة من منافسات المجموعة الثامنة.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:15</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/sport/2512201/" target="_blank" rel="noopener noreferrer">مصر تتعادل مع إيران في ختام دور المجموعات وترافق ‏بلجيكا إلى الدور الثاني من كأس العالم 2026‏</a>
+        </div>
+        
+        <div class="article-summary">تعادل منتخب مصر مع نظيره الإيراني بهدف لمثله ‏خلال المباراة التي جمعتهما صباح اليوم السبت، في ‏مدينة سياتل الأمريكية، ضمن منافسات الجولة الثالثة ‏والأخيرة من دور المجموعات ببطولة كأس العالم لكرة ‏القدم 2026‌‎.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:51</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AA%D9%88%D9%86%D8%B3/%D8%AA%D9%88%D9%86%D8%B3-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D8%B3%D8%AA%D9%82%D8%B7%D8%A7%D8%A8-440-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D9%84%D8%A7%D9%84-3-%D8%A3%D8%B4%D9%87%D8%B1/3979465" target="_blank" rel="noopener noreferrer">تونس تعلن استقطاب 440 مليون دولار من الاستثمارات خلال 3 أشهر</a>
+        </div>
+        
+        <div class="article-summary">في الربع الأول من عام 2026 بنسبة نمو 25.7 بالمئة مقارنة بالفترة ذاتها من عام 2025</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:21</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/europe/2026/06/27/iaea-inspections-at-bombed-iranian-nuclear-sites-key-to-lifting-sanctions/" target="_blank" rel="noopener noreferrer">IAEA inspections at bombed Iranian nuclear sites key to lifting sanctions</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/business/money/2026/06/26/uae-property-is-foreign-capital-still-flowing-into-dubais-property-market/" target="_blank" rel="noopener noreferrer">UAE Property: &#39;Is foreign capital still flowing into Dubai&#39;s property market?&#39;</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T04:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/culture-and-arts/2511996/" target="_blank" rel="noopener noreferrer">الأغباني الدمشقي في دوما… حكاية خيطٍ يحفظ ذاكرة المكان</a>
+        </div>
+        
+        <div class="article-summary">في مدينة دوما، عروس الغوطة الشرقية، لا تزال حرفة الأغباني تقاوم الزمن بوصفها واحدة من أعرق الصناعات التراثية السورية، حاملةً في خيوطها ذاكرة اجتماعية وثقافية امتدت لقرون، وموثقةً قصة نساء صنعن الجمال بصبرٍ ودقة، وحفظن إرثاً يلامس هوية المكان.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T01:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/locals/2512003/" target="_blank" rel="noopener noreferrer">مياه دمشق وأوكسفام تنفذان مشروعاً مائياً في الكسوة</a>
+        </div>
+        
+        <div class="article-summary">نفذت الشركة العامة لمياه الشرب والصرف الصحي في محافظة دمشق، بالتعاون مع منظمة &#34;أوكسفام&#34; البريطانية، مشروعاً حيوياً في مدينة الكسوة بريف دمشق تمثل بتمديد خط فونت بقطر 350 مم، وذلك تمهيداً لاستثمار خزان الجبل العالي الذي تبلغ سعته 1000م3.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T00:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%B3%D9%85%D8%A7%D8%B9-%D8%AF%D9%88%D9%8A-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%B3%D9%8A%D8%B1%D9%8A%D9%83-%D8%AC%D9%86%D9%88%D8%A8%D9%8A-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86/3979384" target="_blank" rel="noopener noreferrer">سماع دوي انفجار في مدينة سيريك جنوبي إيران</a>
+        </div>
+        
+        <div class="article-summary">بحسب التلفزيون الرسمي الإيراني.. دون تقديم تفاصيل إضافية</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:47</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1/%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1-%D9%88%D8%B1%D9%88%D8%B3%D9%8A%D8%A7-%D8%AA%D9%88%D9%82%D8%B9%D8%A7%D9%86-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D9%84%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D9%88%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A/3979345" target="_blank" rel="noopener noreferrer">الجزائر وروسيا توقعان اتفاقيات لتعزيز التعاون الاقتصادي والعلمي</a>
+        </div>
+        
+        <div class="article-summary">شملت الجمارك والسياحة والعمل والصناعة الدوائية وحماية التراث والتعاون العلمي، وفق وكالة الأنباء الجزائرية</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T19:53</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/business/property/2026/06/26/dubai-rental-market-cools-as-supply-surge-hands-tenants-new-negotiating-power/" target="_blank" rel="noopener noreferrer">Dubai rental market cools as supply surge hands tenants new negotiating power</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T10:26</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/26/fire-breaks-out-in-abu-dhabis-mina-zayed/" target="_blank" rel="noopener noreferrer">Fire crews respond to blaze at carpet market in Abu Dhabi&#39;s Mina Zayed</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T07:37</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/جنوب-سيناء-تحتفل-بتأهل-الفراعنة-فرحة-عارمة-بعد-حسم-بطاقة/7462472" target="_blank" rel="noopener noreferrer">جنوب سيناء تحتفل بتأهل الفراعنة.. فرحة عارمة بعد حسم بطاقة العبور لدور الـ32</a>
+        </div>
+        
+        
+      </article>
+      
+    
+    </div>
+  </div>
+
+  <div class="column col-military">
+    <div class="col-header">
+      <span class="col-emoji">⚔️</span>
+      <div class="col-title-zh">军事冲突</div>
+      <div class="col-title-en">Military / Conflict</div>
+      
+      <div class="col-count">55 篇报道</div>
+    </div>
+    <div class="article-list">
+    
+    
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/international/2512233/" target="_blank" rel="noopener noreferrer">مصرع شخص وفقدان آخر جراء الأمطار الغزيرة في اليابان</a>
+        </div>
+        
+        <div class="article-summary">لقي رجل مصرعه وفُقد آخر جراء الأمطار الغزيرة التي ضربت اليابان، مع تحذيرات من وقوع فيضانات وانهيارات أرضية، مع اقتراب عاصفة استوائية جديدة من البلاد.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:56</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/top-pakistani-iranian-diplomats-reaffirm-commitment-to-regional-peace-in-wake-of-new-strikes/3979498" target="_blank" rel="noopener noreferrer">Top Pakistani, Iranian diplomats reaffirm commitment to regional peace in wake of new strikes</a>
+        </div>
+        
+        <div class="article-summary">Pakistan&#39;s Ishaq Dar speaks with his Iranian counterpart Abbas Araghchi over phone after strikes</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:44</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/international/2512220/" target="_blank" rel="noopener noreferrer">المنظمة البحرية الدولية تجلي 2500 بحار عالقين في ‏الخليج العربي</a>
+        </div>
+        
+        <div class="article-summary">أعلنت المنظمة البحرية الدولية أنها أجلت بنجاح نحو ‌‏2500 بحار عالقين في الخليج العربي، قبل أن تعلق ‏عمليات الإجلاء إثر تعرض سفينة تجارية لهجوم أثناء ‏عبورها مضيق هرمز‎.‎</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T06:36</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/israel-news/defense-news/article-900633" target="_blank" rel="noopener noreferrer">IDF kills 17 terrorists, arrests over 100 suspects in operations over past week</a>
+        </div>
+        
+        <div class="article-summary">As part of the operations, the IDF uncovered seven drones, combat equipment, and incitement materials, seizing at least ten weapons, including M-16 rifles, handguns, and several improvised weapons.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:44</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A7%D9%84%D8%AD%D8%B1%D8%B3-%D8%A7%D9%84%D8%AB%D9%88%D8%B1%D9%8A-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D9%81%D9%86%D8%A7-%D9%86%D9%82%D8%A7%D8%B7-%D8%AA%D9%85%D8%B1%D9%83%D8%B2-%D9%84%D9%84%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9/3979471" target="_blank" rel="noopener noreferrer">الحرس الثوري: استهدفنا نقاط تمركز للجيش الأمريكي في المنطقة</a>
+        </div>
+        
+        <div class="article-summary">ردا على غارة أمريكية طالت مدينة سيريك جنوبي إيران..</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:39</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/27/uae-launches-10-million-relief-drive-for-earthquake-hit-venezuela/" target="_blank" rel="noopener noreferrer">UAE launches $10 million relief drive for earthquake-hit Venezuela</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:39</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/israel-news/defense-news/article-900632" target="_blank" rel="noopener noreferrer">IDF soldiers searching Beit Aryeh for two suspects after terrorist infiltration sirens sound</a>
+        </div>
+        
+        <div class="article-summary">According to the military, two suspects were reportedly seen in the area, and the dispatched soldiers are searching to locate them.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T05:02</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/2026/06/26/venezuela-deadly-twin-earthquakes/" target="_blank" rel="noopener noreferrer">Venezuela earthquakes kill at least 920 as rescue teams continue search for survivors</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T04:53</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">SANA — الوكالة العربية السورية للأنباء</div>
+        <div class="article-title" lang="ar">
+          <a href="https://sana.sy/sport/syrian-sport/2512189/" target="_blank" rel="noopener noreferrer">أصالة الخيول العربية وجمهور فروسية السرعة يتصدران سباق دمشق</a>
+        </div>
+        
+        <div class="article-summary">شهد مضمار سباق دمشق في منطقة الديماس بريف دمشق منافسات سباق الخيول العربية الأصيلة وسط أجواء مفعمة بالحماس والإثارة، وبمشاركة واسعة من نخبة مرابط الخيول العربية، وحضور جماهيري كبير من عشاق ومحبي فروسية السرعة.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T04:30</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/27/live-us-iran-strikes-strait-of-hormuz/" target="_blank" rel="noopener noreferrer">Iran war latest: US strikes Iran in response to attack on ship transiting Strait of Hormuz</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T03:40</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/israel-news/article-900629" target="_blank" rel="noopener noreferrer">Poll shows most Israelis favor hardline security policies on Lebanon, Iran, Palestinians</a>
+        </div>
+        
+        <div class="article-summary">The findings suggest widespread acceptance of the view that Hezbollah poses a significant threat requiring decisive steps, even at the risk of regional escalation.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T03:36</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/key-points-us-israel-lebanon-agreement" target="_blank" rel="noopener noreferrer">Key points from US-Israel-Lebanon agreement</a>
+        </div>
+        
+        <div class="article-summary">Washington on Friday released text of a trilateral framework between Israel, Lebanon and the United States aimed at ending hostilities that have been a violent second front of the Middle East war.The following are highlights of the 14-point agreement signed in the US capital:- &#39;Lasting peace&#39; -Israel and Lebanon, with US support, &#34;affirm their shared goal of achieving lasting peace and security,&#34; the agreement begins.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-27T03:30</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/middle-east/iran-news/article-900622" target="_blank" rel="noopener noreferrer">US strikes Iran in retaliation for Strait of Hormuz cargo ship attack</a>
+        </div>
+        
+        <div class="article-summary">The strikes follow Iran&#39;s launching of a one-way attack drone at the Singapore-flagged M/V Ever Lovely cargo ship along the Omani coast as it exited the Strait of Hormuz.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T23:45</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/irgc-says-it-targeted-us-military-positions-in-region-after-strikes-in-south/3979442" target="_blank" rel="noopener noreferrer">IRGC says it targeted US military positions in region after strikes in south</a>
+        </div>
+        
+        <div class="article-summary">Statement aired by state TV warns response will be broader if attacks recur</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T23:20</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/2-projectiles-hit-communications-tower-in-southern-iran-state-tv-says/3979433" target="_blank" rel="noopener noreferrer">2 projectiles hit communications tower in southern Iran, state TV says</a>
+        </div>
+        
+        <div class="article-summary">Explosions also heard at maritime pier in Sirik</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T22:30</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/americas/us-sudan-uae-trade-accusations-over-sudan-conflict/3979426" target="_blank" rel="noopener noreferrer">US, Sudan, UAE trade accusations over Sudan conflict</a>
+        </div>
+        
+        <div class="article-summary">Washington imposes sanctions over alleged chemical weapons use, as Khartoum accuses Abu Dhabi of fueling RSF insurgency</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T22:15</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/opinion/article-900487" target="_blank" rel="noopener noreferrer">JD Vance is wrong on US aid to Israel - here is what he failed to tell Americans - opinion</a>
+        </div>
+        
+        <div class="article-summary">Vance should understand that military assistance to Israel is not a one-sided burden on the American taxpayer. He should also examine the cost of the American military presence in the Middle East.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T22:12</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/iran-s-revolutionary-guard-corps-warns-of-swift-retaliation-after-us-strike-on-southern-iran/3979423" target="_blank" rel="noopener noreferrer">Iran’s Revolutionary Guard Corps warns of swift retaliation after US strike on southern Iran</a>
+        </div>
+        
+        <div class="article-summary">Iranian force says any ‘new folly’ will face harsh response</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T22:05</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D8%AF%D9%88%D9%84%D9%8A/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AA%D8%B9%D9%84%D9%86-%D8%A3%D9%86-%D8%B1%D8%B5%D9%8A%D9%81-%D9%85%D9%8A%D9%86%D8%A7%D8%A1-%D8%B3%D9%8A%D8%B1%D9%8A%D9%83-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D9%81%D9%8A-%D9%87%D8%AC%D9%88%D9%85-%D8%B9%D8%AF%D8%A7%D8%A6%D9%8A/3979412" target="_blank" rel="noopener noreferrer">إيران تعلن أن رصيف ميناء سيريك استهدف في &#34;هجوم عدائي&#34;</a>
+        </div>
+        
+        <div class="article-summary">بحسب التفزيون الرسمي الإيراني</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T21:16</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/americas/us-strikes-iran-following-attack-on-ship-in-strait-of-hormuz-centcom/3979405" target="_blank" rel="noopener noreferrer">US strikes Iran following attack on ship in Strait of Hormuz: CENTCOM</a>
+        </div>
+        
+        <div class="article-summary">Strikes came after Trump warned of consequences following &#39;foolish violations&#39; of ceasefire</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T21:04</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/us-military-conducted-strikes-against-iran" target="_blank" rel="noopener noreferrer">US military conducted strikes against Iran</a>
+        </div>
+        
+        <div class="article-summary">WASHINGTON, June 26 (Reuters) - The U.S. military conducted strikes against Iran on Friday, Central Command said in a statement, adding thatU.S. aircraft struck Iranian missile and drone storage locations and coastal radar sites after Tehran&#39;s attack on a commercial ship in the Strait of Hormuz.(Reporting by Daphne Psaledakis and Ismail Shakil, editing by Michelle Nichols )</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T21:01</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/us-carries-out-strikes-iran-after-vessel-attack" target="_blank" rel="noopener noreferrer">US carries out strikes in Iran after vessel attack</a>
+        </div>
+        
+        <div class="article-summary">US forces struck Iranian coastal targets after Tehran was accused of attacking a commercial cargo ship in the Strait of Hormuz.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:40</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%85%D8%B9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%8A%D8%A8%D8%AF%D8%A3-%D8%A8%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D9%85%D9%86-%D9%85%D9%86%D8%B7%D9%82%D8%AA%D9%8A%D9%86-%D8%AA%D8%AC%D8%B1%D9%8A%D8%A8%D9%8A%D8%AA%D9%8A%D9%86/3979357" target="_blank" rel="noopener noreferrer">لبنان: الاتفاق مع إسرائيل يبدأ بانسحاب من منطقتين تجريبيتين</a>
+        </div>
+        
+        <div class="article-summary">السفارة اللبنانية لدى واشنطن قالت إن الجيش سينتشر بالمنطقتين ويتولى نزع سلاح الجماعات المسلحة غير التابعة للدولة</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:16</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Ajansı عربي (TR)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.aa.com.tr/ar/%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86/%D8%A3%D8%B3%D9%8A%D8%B1-%D9%85%D8%AD%D8%B1%D8%B1-%D9%8A%D8%B1%D9%88%D9%8A-%D9%84%D9%84%D8%A3%D9%86%D8%A7%D8%B6%D9%88%D9%84-%D9%83%D9%8A%D9%81-%D8%A3%D9%81%D9%82%D8%AF%D9%87-%D8%A7%D9%84%D8%AA%D8%B9%D8%B0%D9%8A%D8%A8-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A8%D8%B5%D8%B1%D9%87-%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-/3979349" target="_blank" rel="noopener noreferrer">أسير محرر يروي للأناضول كيف أفقده التعذيب الإسرائيلي بصره</a>
+        </div>
+        
+        <div class="article-summary">- محمود أبو فول خرج مبتور القدم ويطالب بالسفر للعلاج في اليوم الدولي لمساندة ضحايا التعذيب</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:06</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/israel-lebanon-framework-agreement-sets-process-disarm-hezbollah-rubio-says" target="_blank" rel="noopener noreferrer">Israel-Lebanon framework agreement sets process to disarm Hezbollah, Rubio says</a>
+        </div>
+        
+        <div class="article-summary">WASHINGTON, June 26 (Reuters) - U.S. Secretary of State Marco Rubio said on Friday that the framework agreement reached with Israel and Lebanon establishes a clear process to restore Lebanon&#39;s sovereignty, disarm Hezbollah and dismantle its infrastructure.The agreement enables Israel to return to its borders once the threat to its citizens is removed and creates a trilateral Military Coordination Group for Lebanon, facilitated by the United States, Rubio said in a statement. (Reporting by Christ</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:01</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/international/article-900621" target="_blank" rel="noopener noreferrer">US-Israel-Lebanon sign trilateral framework agreement aimed at dismantling Hezbollah</a>
+        </div>
+        
+        <div class="article-summary">The agreement outlines a structured process for disarming Hezbollah, dismantling terrorist infrastructure, and enabling the IDF to withdraw from Lebanon once the threat posed by Hezbollah is removed.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:01</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/us-iran-trade-strikes-putting-new-strain-middle-east-truce" target="_blank" rel="noopener noreferrer">US, Iran trade strikes putting new strain on Middle East truce</a>
+        </div>
+        
+        <div class="article-summary">Iran launched attacks on US sites in the Gulf in response to American strikes on the country, state media said Saturday, after Washington accused Tehran of attacking one of its cargo ships in the Strait of Hormuz.The trading of fire raised questions about efforts to keep the crucial waterway open while Washington and Tehran negotiate a final settlement to a war that began on February 28 with US and Israeli strikes on Iran.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T20:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/lebanon-israel-and-us-sign-trilateral-framework-pact" target="_blank" rel="noopener noreferrer">Lebanon, Israel and US sign trilateral framework pact</a>
+        </div>
+        
+        <div class="article-summary">Lebanon, Israel and the United States on Friday signed a trilateral framework agreement aimed at paving the way for a peace deal between the two long-time Middle East adversaries.The agreement -- which includes a pilot effort in which Lebanese soldiers take control of two areas occupied by Israel, as well as a process aimed at disarming Hezbollah -- is the result of five rounds of talks in the US capital.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:30</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/israel-lebanon-expected-sign-framework-deal-after-us-mediated-talks" target="_blank" rel="noopener noreferrer">Israel, Lebanon expected to sign framework deal after US-mediated talks</a>
+        </div>
+        
+        <div class="article-summary">By Rami Ayyub and Maya GebeilyJERUSALEM/BEIRUT, June 26 (Reuters) - Israel and Lebanon are expected to sign a framework agreement in Washington on Friday following several days of talks aimed at securing an end to fighting between Israel and Iran-backed Hezbollah militants, Israeli and Lebanese officials said. The officials did not provide details on the framework deal and did not say how its terms would be different from those included in an April 16 ceasefire deal that preceded several rounds </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:01</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/26/uae-factory-coin-iran-war/" target="_blank" rel="noopener noreferrer">Inside the Dubai factory forging a symbol of UAE unity after the Iran war</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/europe/2026/06/26/france-hottest-day-europe-heatwave-air-conditioning/" target="_blank" rel="noopener noreferrer">Heatwave-stricken France finally warms to the American idea of air conditioning</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/26/postcard-from-rome-shrine-of-flags-tells-italys-history-of-military-triumphs-and-tragedies/" target="_blank" rel="noopener noreferrer">Postcard from Rome: Shrine of Flags tells Italy&#39;s history of military triumphs and tragedies</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T18:00</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/us-brokers-deal-limited-israeli-withdrawal-south-lebanon" target="_blank" rel="noopener noreferrer">US brokers deal for limited Israeli withdrawal in south Lebanon</a>
+        </div>
+        
+        <div class="article-summary">The deal establishes a US-facilitated military coordination group to oversee the creation of two initial pilot zones in southern Lebanon.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T17:42</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/shiite-muslims-mark-their-holiest-day-war-battered-lebanon" target="_blank" rel="noopener noreferrer">Shi&#39;ite Muslims mark their holiest day in war-battered Lebanon</a>
+        </div>
+        
+        <div class="article-summary">By Jihed Abidellaoui, Zohra Bensemra and Khalil AshawiNABATIEH, Lebanon, June 26 (Reuters) - Chanting rhythmically in the summer sun, the men marched through the southern Lebanese city of Nabatieh as part of their annual tradition to mark Ashura, the holiest day in the Shi&#39;ite Muslim calendar. This year, they walked through a city in ruins.Israel&#39;s nearly four-month air and ground campaign that it says was targeting armed group Hezbollah has destroyed large swathes of Lebanon&#39;s south and left ot</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T17:36</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/un-agency-working-restart-hormuz-evacuations-after-ship-attack" target="_blank" rel="noopener noreferrer">UN agency working to restart Hormuz evacuations after ship attack</a>
+        </div>
+        
+        <div class="article-summary">By Jonathan SaulLONDON, June 26 (Reuters) - The United Nations is working with countries to resume the evacuation of hundreds of ships and thousands of stranded seafarers from the Strait of Hormuz after the effort was halted earlier this week, a top U.N. agency official said on Friday.The U.N.&#39;s International Maritime Organization said on Thursday it had &#34;temporarily paused&#34; its evacuation initiative after a container ship operated by Taiwan&#39;s Evergreen was attacked.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T17:36</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/6-farmers-abducted-by-israeli-army-in-southern-lebanon-amid-ceasefire-violations/3979219" target="_blank" rel="noopener noreferrer">6 farmers abducted by Israeli army in southern Lebanon amid ceasefire violations</a>
+        </div>
+        
+        <div class="article-summary">Abductees include 3 Lebanese residents of Ain Arab in Marjayoun district, 3 Syrian workers, says Anadolu correspondent</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T17:23</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/26/more-than-100-vessels-evacuated-from-strait-of-hormuz-as-gulf-of-oman-attack-halts-wider-rescue-mission/" target="_blank" rel="noopener noreferrer">More than 100 vessels evacuated from Strait of Hormuz as Gulf of Oman attack halts wider rescue mission</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T17:18</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Al-Monitor</div>
+        <div class="article-title" >
+          <a href="https://www.al-monitor.com/originals/2026/06/ships-crossing-hormuz-use-oman-passage-despite-iran-warnings-0" target="_blank" rel="noopener noreferrer">Ships crossing Hormuz use Oman passage despite Iran warnings</a>
+        </div>
+        
+        <div class="article-summary">Traffic levels in the Strait of Hormuz fell back from Wednesday&#39;s high, but vessels continued to use a non-Iranian-approved passage despite a ship being struck by a projectile, tracking platforms showed Friday.At least 42 commodity vessels -- including tankers carrying oil, gas, and dry bulk such as fertilisers -- crossed on Thursday, Kpler&#39;s tracking platform showed, down from a high of 57 on Wednesday.Ten of those vessels entered the Gulf, while 32 exited. Half of the 42 vessels used a souther</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T16:30</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/us-israel-iran-war/4th-day-of-us-mediated-israel-lebanon-talks-kicks-off-in-washington/3979110" target="_blank" rel="noopener noreferrer">4th day of US-mediated Israel-Lebanon talks kicks off in Washington</a>
+        </div>
+        
+        <div class="article-summary">Sides &#39;have reconvened today to continue their work toward an agreement for &#39;lasting peace and security,&#39; says State Department official</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T15:23</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/israeli-drone-strike-kills-palestinian-in-northern-gaza-amid-ceasefire-violations/3979078" target="_blank" rel="noopener noreferrer">Israeli drone strike kills Palestinian in northern Gaza amid ceasefire violations</a>
+        </div>
+        
+        <div class="article-summary">Israeli violations of Gaza ceasefire agreement killed 1,031, injured 3,309 others since Oct. 2025</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T14:43</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/hamas-says-consultations-continue-with-mediators-on-gaza-ceasefire-implementation/3979061" target="_blank" rel="noopener noreferrer">Hamas says consultations continue with mediators on Gaza ceasefire implementation</a>
+        </div>
+        
+        <div class="article-summary">Hamas accuses Israel of major ceasefire violations as envoy Mladenov presents new approaches; delegation to carry faction response to Cairo in coming days, spokesman tells Anadolu</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T14:29</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/israeli-occupiers-set-fire-to-1-hectare-of-palestinian-olive-groves-under-army-protection/3979047" target="_blank" rel="noopener noreferrer">Israeli occupiers set fire to 1 hectare of Palestinian olive groves under army protection</a>
+        </div>
+        
+        <div class="article-summary">Local official says attack on Burqa village, east of Ramallah, carried out under Israeli army protection</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T14:19</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/26/messi-jordan-argentina/" target="_blank" rel="noopener noreferrer">Messi video strikes fear into Jordanian hearts before World Cup match</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T14:19</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/israel-drops-leaflets-warning-lebanese-to-stay-away-from-southern-border-town/3979044" target="_blank" rel="noopener noreferrer">Israel drops leaflets warning Lebanese to stay away from southern border town</a>
+        </div>
+        
+        <div class="article-summary">Warning comes as displaced residents continue returning to southern Lebanon and US-mediated talks between Israel, Lebanon in Washington enter additional day</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T14:17</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/uae/2026/06/26/uae-public-told-to-disregard-safety-alert-after-warning-issued/" target="_blank" rel="noopener noreferrer">Friday afternoon safety alerts due to &#39;technical malfunction&#39;, authorities say</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T13:41</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/europe/2026/06/26/mapping-russias-call-to-xbox-warriors-to-wage-its-ukraine-drone-offensive/" target="_blank" rel="noopener noreferrer">Mapping Russia&#39;s call to Xbox warriors to wage its Ukraine drone offensive</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T13:11</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The Jerusalem Post</div>
+        <div class="article-title" >
+          <a href="https://www.jpost.com/defense-and-tech/article-900566" target="_blank" rel="noopener noreferrer">The next battlefield: IDF races to prepare for future wars in space, top general says - exclusive</a>
+        </div>
+        
+        <div class="article-summary">MILITARY AFFAIRS: Brig.-Gen. Yael Grosman tells The Post why the IDF sees space as the next battlefield, while other IDF sources detail advances in AI, cyber, electronic warfare, and more.</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T12:34</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/iran-turns-back-3-foreign-tankers-attempting-unauthorized-hormuz-transit-reports/3978831" target="_blank" rel="noopener noreferrer">Iran turns back 3 foreign tankers attempting &#39;unauthorized&#39; Hormuz transit: Reports</a>
+        </div>
+        
+        <div class="article-summary">Iran&#39;s state media says vessels attempted to use southern corridor of the Strait of Hormuz without Tehran’s coordination</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T11:58</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/26/isis-attacks-against-syrian-forces-rising-sharply-warns-conflict-monitor/" target="_blank" rel="noopener noreferrer">ISIS attacks against Syrian forces rising sharply, warns conflict monitor</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T10:45</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/world/hezbollah-rejects-lebanon-israel-talks-under-us-sponsorship/3978723" target="_blank" rel="noopener noreferrer">Hezbollah rejects Lebanon-Israel talks under US sponsorship</a>
+        </div>
+        
+        <div class="article-summary">Leader of Lebanese group says no one has the right to make commitments affecting Lebanon&#39;s sovereignty</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T10:16</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/business/energy/2026/06/26/oil-on-track-for-sharp-weekly-loss-as-strait-of-hormuz-traffic-improves/" target="_blank" rel="noopener noreferrer">Brent oil below prewar levels as Strait of Hormuz traffic improves</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T09:57</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">The National (UAE)</div>
+        <div class="article-title" >
+          <a href="https://www.thenationalnews.com/news/mena/2026/06/26/un-suspends-strait-of-hormuz-evacuation-operation-after-attack-on-vessel/" target="_blank" rel="noopener noreferrer">UN suspends Strait of Hormuz evacuation operation after attack on vessel</a>
+        </div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T09:51</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/us-israel-iran-war/hormuz-traffic-keeps-moving-despite-attack-on-container-ship/3978675" target="_blank" rel="noopener noreferrer">Hormuz traffic keeps moving despite attack on container ship</a>
+        </div>
+        
+        <div class="article-summary">Empty LNG carriers gather off Qatar’s Ras Laffan facility as Doha prepares to increase exports</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T09:43</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">Anadolu Agency (TR)</div>
+        <div class="article-title" >
+          <a href="https://www.aa.com.tr/en/middle-east/iran-warns-against-israeli-military-flights-through-neighboring-states-airspace/3978638" target="_blank" rel="noopener noreferrer">Iran warns against Israeli military flights through neighboring states’ airspace</a>
+        </div>
+        
+        <div class="article-summary">Military headquarters says Tehran reserves right to respond to threats, does not name specific countries</div>
+        
+        
+        <div class="article-meta">
+          <span>2026-06-26T08:57</span>
+        </div>
+        
+      </article>
+      
+      <article class="article-item">
+        <div class="article-source">اليوم السابع (Youm7)</div>
+        <div class="article-title" lang="ar">
+          <a href="https://www.youm7.com/story/2026/6/27/النشرة-المرورية-سيولة-فى-حركة-السير-وانتشار-أمنى-بطرق-القاهرة/7462507" target="_blank" rel="noopener noreferrer">النشرة المرورية.. سيولة فى حركة السير وانتشار أمنى بطرق القاهرة والجيزة</a>
+        </div>
+        
+        
+      </article>
+      
+    
+    </div>
+  </div>
+
+
+</div><!-- /.broadsheet -->
+
+<footer class="footer">
+  <p>数据由 Middle East Daily Brief 自动采集于 2026-06-27 · 来源覆盖 13+ 家中东主流媒体</p>
+  <p>报告为自包含 HTML（无需服务器），可离线查看 · <a href="https://github.com">项目主页</a></p>
+</footer>
+
+</body>
+</html>
